@@ -24,5 +24,3 @@
 
         git clone git@ssh.dev.azure.com:v3/20191407/DiplomArbeit2022/DiplomArbeit2022
 1. Dies in dem Terminal schreiben home/private
-
-Test Kasim
