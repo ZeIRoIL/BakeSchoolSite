@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import {Navigation} from './components/navigation';
+import {CardCategory} from './components/cardCategory';
+import { CarouselMain } from './components/carouselMain';
+import CardsCategory from './components/cardsCategory';
+
+
+import 'bootstrap/dist/css/bootstrap.css';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" > 
+      <Navigation/>
+     
+      <div class="cat-main">
+        <h1  style={{ marginTop: '50px'}} >Suche eine Kategorie!</h1>
+        
+        <div style={{ backgroundColor: 'lightblue',marginTop: '100px'}} >
+          <CardsCategory/>
+        </div>
+        
+      </div>
     </div>
   );
 }
