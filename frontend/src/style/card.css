@@ -1,6 +1,8 @@
 .cardmain{
-    background-color: lightblue;
-    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border: black solid 4px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding: 30px;
     border-radius: 20px;
 }
