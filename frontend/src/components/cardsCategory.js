@@ -1,11 +1,16 @@
 import React from 'react'
 import { CardCategory } from './cardCategory'
 
+import '../style/card.css';
+
 const CardsCategory = () => {
     return (
         <div>
-            <h3>Brot</h3>
-            <CardCategory/>
+            <div className="cardmain">
+                <h3>Brot</h3>
+                <CardCategory/>
+            </div>
+            
         
         </div>
     )

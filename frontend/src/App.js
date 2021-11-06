@@ -1,30 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+// Components
 import {Navigation} from './components/navigation';
 import {CardCategory} from './components/cardCategory';
-import { CarouselMain } from './components/carouselMain';
-import CardsCategory from './components/cardsCategory';
+import { CarouselMain } from './components/carouselMain'; // class variable
+import MainBlock from './components/mainblock'; // const variable
+import Footer from './components/footer';
 
 
+// Pages
+import './pages/mainPage';
+
+// libary
 import 'bootstrap/dist/css/bootstrap.css';
+
 
 
 const App = () => {
   return (
-    <div className="App" > 
+    <div className="App" >  
       <Navigation/>
-     
-      <div class="cat-main">
-        <h1  style={{ marginTop: '50px'}} >Suche eine Kategorie!</h1>
-        
-        <div style={{ backgroundColor: 'lightblue',marginTop: '100px'}} >
-          <CardsCategory/>
-        </div>
-        
-      </div>
+      <CarouselMain/>
+      
+      <MainBlock/>
+      <MainBlock/>
+      <MainBlock/>
+      
+      <Footer/>
     </div>
   );
 }
 
-export default App;
+export default App
