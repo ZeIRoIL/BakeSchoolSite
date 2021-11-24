@@ -4,6 +4,9 @@ import logo from '../logo.svg'
 // Pages
 import Home from '../pages/mainPage';
 import LoginPage from '../pages/login';
+import Categorie from '../pages/categories';
+import RewardPage from '../pages/rewardPage';
+
 
 import '../style/navigation.css'; // Tell webpack that Button.js uses these styles
 
@@ -24,10 +27,10 @@ export class Navigation extends Component {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link href="#features">Rezept</Nav.Link>
-                                <Nav.Link href="#pricing">Kategorie</Nav.Link>
+                                <Nav.Link href="/categorie">Kategorie</Nav.Link>
                             </Nav>
                             <Nav>
-                                <Nav.Link href="#deets">Meine Erfolge</Nav.Link>
+                                <Nav.Link href="/reward">Belohnungen</Nav.Link>
                                 <Nav.Link eventKey={2} href="/login">
                                     Mein Konto
                                 </Nav.Link>
@@ -45,6 +48,8 @@ export class Navigation extends Component {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<LoginPage />} />
+                    <Route path="/categorie" element={<Categorie />} />
+                    <Route path="/reward" element={<RewardPage />} />
                 </Routes>
                 </div>
                 )

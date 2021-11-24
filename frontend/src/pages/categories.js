@@ -1,14 +1,14 @@
-import React from 'react'
-import { CardsCategory } from '../components/cardsCategory'
+import React from 'react';
+
 
 const categoriesPage = () => {
     return (
         <div>
-        <div class="cat-main">s
+        <div class="cat-main">
         <h1  style={{ marginTop: '50px'}} >Suche eine Kategorie!</h1>
         
         <div style={{ backgroundColor: 'lightblue',marginTop: '100px'}} >
-          <CardsCategory/>
+          
         </div>
         <a href='https://www.freepik.com/photos/food'>Food photo created by freepik - www.freepik.com</a>
       </div>
