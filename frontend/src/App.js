@@ -8,10 +8,12 @@ import {CardCategory} from './components/cardCategory';
 import { CarouselMain } from './components/carouselMain'; // class variable
 import MainBlock from './components/mainblock'; // const variable
 import Footer from './components/footer';
+import { Routes, Route, Link } from "react-router-dom";
 
 
 // Pages
-import './pages/mainPage';
+import Home from './pages/mainPage';
+import LoginPage from './pages/login';
 
 // libary
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,17 +21,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 const App = () => {
-  return (
+  return ( 
+
     <div className="App" >  
       <Navigation/>
-      <CarouselMain/>
-      
-      <MainBlock/>
-      <MainBlock/>
-      <MainBlock/>
-      
-      <Footer/>
-    </div>
+    <Footer/>
+  </div>
+
   );
 }
 

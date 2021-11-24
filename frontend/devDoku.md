@@ -14,3 +14,7 @@ For a good style feature you must need to install bootraps as well.
 Should be import in the app.js file
 
 ### `import 'bootstrap/dist/css/bootstrap.css';` 
+
+The password for the git resporitory!
+
+### `j3dmb3343buj6ttnaysaf52jjnsmrcyy3ogyrriv4n5glod4a64q';` 
