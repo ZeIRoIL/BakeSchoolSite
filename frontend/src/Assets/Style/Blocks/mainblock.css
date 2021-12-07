@@ -1,3 +1,16 @@
 .mainblockimg{
-    width: 200px;
+    width: 400px;
+}
+.cardmain{
+    margin-top: 10px ;
+    text-align: center;
+    margin-bottom: 10px;
+    border: solid 4px red;
+    padding: 10px;
+    background-color: rgb(229, 244, 247);
+    border-radius: 30px;
+    height: auto;
+}
+.cardText{
+    align-self: center;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 
-import '../../Assets/Style/footer/footer.css';
+import '../../Assets/Style/Footer/footer.css';
 
 
 const footer = () => {

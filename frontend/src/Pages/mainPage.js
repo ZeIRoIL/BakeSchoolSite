@@ -54,9 +54,9 @@ function mainPage ()  {
             </CardGroup> */}
         <CarouselMain/>
         
-        <MainBlock/>
-        <MainBlock/>
-        <MainBlock/>
+        <MainBlock side={"left"}/>
+        <MainBlock side={'right'}/>
+        <MainBlock side={'left'}/>
         
         
         </div>
