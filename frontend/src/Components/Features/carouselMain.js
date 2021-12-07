@@ -1,12 +1,14 @@
-import logo from '../logo.svg';
+import logo from '../../Assets/img/logo.svg';
 import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
 
-import '../style/carousel.css';
+// Style 
+import '../../Assets/Style/Features/carousel.css';
 
-import pic1 from '../img/MainSite/pic1.jpg';
-import pic2 from '../img/MainSite/pic2.jpg';
-import pic3 from '../img/MainSite/pic3.jpg';
+// Components
+import pic1 from '../../Assets/img/MainSite/pic1.jpg';
+import pic2 from '../../Assets/img/MainSite/pic2.jpg';
+import pic3 from '../../Assets/img/MainSite/pic3.jpg';
 
 export class CarouselMain extends Component {
     render() {
@@ -52,3 +54,5 @@ export class CarouselMain extends Component {
         )
     }
 }
+
+export default CarouselMain;

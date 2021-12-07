@@ -1,4 +1,4 @@
-import logo from '../logo.svg';
+import logo from '../../../Assets/img/logo.svg';
 import React, { Component } from 'react';
 import { Card, Button,Placeholder } from 'react-bootstrap';
 

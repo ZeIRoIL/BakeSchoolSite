@@ -1,9 +1,10 @@
 import React from 'react';
-import CardsCategory from './cardsCategory';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 
-import pic1 from '../img/MainSite/cake.png';
-import '../style/mainblock.css';
+// Assets
+import pic1 from '../../Assets/img/MainSite/pic1.jpg';
+// Style
+import '../../Assets/Style/Blocks/mainblock.css';
 
 const mainBlock = () => {
     return (

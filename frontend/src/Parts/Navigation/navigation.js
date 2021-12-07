@@ -1,18 +1,19 @@
-import logo from '../logo.svg'
+// Assets
+import logo from '../../Assets/img/logo.svg';
 
 
 // Pages
-import Home from '../pages/mainPage';
-import LoginPage from '../pages/login';
-import Categorie from '../pages/categories';
-import RewardPage from '../pages/rewardPage';
+import Home from '../../Pages/mainPage';
+import LoginPage from '../../Pages/login';
+import Categorie from '../../Pages/categories';
+import RewardPage from '../../Pages/rewardPage';
 
+// Style
+import '../../Assets/Style/navigation/navigation.css'; // Tell webpack that Button.js uses these styles
 
-import '../style/navigation.css'; // Tell webpack that Button.js uses these styles
-
+// Components
 import React, { Component } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
-
 import { Routes, Route, Link } from "react-router-dom";
 
 export class Navigation extends Component {

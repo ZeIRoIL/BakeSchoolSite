@@ -1,11 +1,13 @@
 import React from 'react'
+
+// Components
 import { CardGroup, Card } from 'react-bootstrap';
-import { CarouselMain } from '../components/carouselMain'; // class variable
-import MainBlock from '../components/mainblock'; // const variable
-import Footer from '../components/footer';
+import CarouselMain from '../Components/Features/carouselMain';
+import MainBlock from '../Components/Blocks/mainblock'; // const variable
 
 
-const mainPage = () => {
+
+function mainPage ()  {
     return (
         <div>
             {/* <CardGroup>
@@ -50,7 +52,7 @@ const mainPage = () => {
                     </Card.Footer>
                 </Card>
             </CardGroup> */}
-            <CarouselMain/>
+        <CarouselMain/>
         
         <MainBlock/>
         <MainBlock/>

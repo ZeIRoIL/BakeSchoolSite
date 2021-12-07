@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+import logo from './Assets/img/logo.svg';
 import './App.css';
 
 
 // Components
-import {Navigation} from './components/navigation';
-import Footer from './components/footer';
+import {Navigation} from './Parts/Navigation/navigation';
+import Footer from './Parts/Footer/footer';
 
 
 // libary

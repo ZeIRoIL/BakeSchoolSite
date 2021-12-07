@@ -1,7 +1,7 @@
 import React from 'react'
-import { CardCategory } from './cardCategory'
+import { CardCategory } from '../CardsCategory/cardCategory'
 
-import '../style/card.css';
+import '../../../Assets/Style/card/cards.css';
 
 const CardsCategory = () => {
     return (

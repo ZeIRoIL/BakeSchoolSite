@@ -18,3 +18,7 @@ Should be import in the app.js file
 The password for the git resporitory!
 
 ### `j3dmb3343buj6ttnaysaf52jjnsmrcyy3ogyrriv4n5glod4a64q';` 
+
+If you need an update for your npm packetmanager, please followe the step by step !
+
+### `https://tastethelinux.com/update-node-js-version-in-ubuntu-linux/` 
