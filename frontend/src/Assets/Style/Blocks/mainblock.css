@@ -3,13 +3,21 @@
 }
 .cardmain{
     margin-top: 10px ;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 10px;
-    border: solid 4px red;
     padding: 10px;
-    background-color: rgb(229, 244, 247);
+    background: linear-gradient(130deg,#23388b,#15b3f1 70%,#c7bac2 30%);
     border-radius: 30px;
+    transition: all 1s ease-in-out;
+    animation: colors 3s infinite ease-in-out;
     height: auto;
+}
+.mainblock-left{
+    background: linear-gradient(130deg,#c7bac2 ,#15b3f1 50%,#23388b);
+}
+.mainblock-right{
+    background: linear-gradient(130deg,#23388b,#15b3f1 50%,#c7bac2 );
 }
 .cardText{
     align-self: center;

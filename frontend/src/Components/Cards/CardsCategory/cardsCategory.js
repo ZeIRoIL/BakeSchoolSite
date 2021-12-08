@@ -1,14 +1,24 @@
-import React from 'react'
-import { CardCategory } from '../CardsCategory/cardCategory'
+import React from 'react';
+import  CardCategory  from './cardCategory';
 
-import '../../../Assets/Style/card/cards.css';
+// Test Data
+import picture from '../../../Assets/img/logo.svg';
+
+
+// Style
+import '../../../Assets/Style/Card/card.css';
 
 const CardsCategory = () => {
     return (
         <div>
-            <div className="cardmain">
-                <h3>Brot</h3>
-                <CardCategory/>
+            <div className="category-cards-main">
+            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
+            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
+            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
+            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
+            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
+            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
+        
             </div>
             
         
