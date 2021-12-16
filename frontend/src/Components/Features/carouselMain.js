@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
 
 // Style 
-import '../../Assets/Style/Features/carousel.css';
+import '../../Assets/Style/Features/carousel.scss';
 
 // Components
 import pic1 from '../../Assets/img/MainSite/pic1.jpg';

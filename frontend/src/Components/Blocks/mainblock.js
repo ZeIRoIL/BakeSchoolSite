@@ -4,8 +4,8 @@ import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 // Assets
 import pic1 from '../../Assets/img/MainSite/pic1.jpg';
 // Style
-import '../../Assets/Style/Blocks/mainblock.css';
-import '../../Assets/Style/Button/MainBtn.css';
+import '../../Assets/Style/Blocks/mainblock.scss';
+import '../../Assets/Style/Button/MainBtn.scss';
 
 
 

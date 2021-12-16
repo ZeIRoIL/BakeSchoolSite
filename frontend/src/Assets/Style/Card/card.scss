@@ -1,0 +1,60 @@
+.category-cards-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    justify-content: center;
+    display: inline-flex;
+}
+
+
+
+.categories-details{
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(247, 247, 247);
+    width: 30%;
+    height: 30%;
+    left: 10%;
+    display: none;
+}
+
+
+.card{
+    background-color: transparent;
+
+    height: auto;
+    width: 20rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 5%;
+    .card-top{
+        
+        border: 8px solid black;
+        border-radius: 5%;
+        .card-headertext
+        {
+            font-size: 2.5rem;
+            background-color: rgb(118, 190, 199);
+            p{
+                padding: 0 0 0 0;
+                margin: 0 0 0 0 ;
+                color: rebeccapurple;
+            }
+        }
+    }
+    .card-details{
+        background-color: lightcoral;
+        .detailslogo{
+            margin: -2rem 1rem 0 0;
+            float: right;
+            width: 2rem;
+        }
+        .difficultlogo {
+            margin: -2rem 0 0 1rem;
+            float: left;
+            display: inline;
+            width: 2rem;
+        }
+    }
+}

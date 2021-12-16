@@ -9,7 +9,7 @@ import Categorie from '../../Pages/categories';
 import RewardPage from '../../Pages/rewardPage';
 
 // Style
-import '../../Assets/Style/Navigation/navigation.css'; // Tell webpack that Button.js uses these styles
+import '../../Assets/Style/Navigation/navigation.scss'; // Tell webpack that Button.js uses these styles
 
 // Components
 import React, { Component } from 'react';

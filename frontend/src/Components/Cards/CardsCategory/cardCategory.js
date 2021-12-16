@@ -3,36 +3,36 @@ import React, { Component } from 'react';
 import { Card, Button,Placeholder } from 'react-bootstrap';
 
 import heart from '../../../Assets/img/heart.svg';
-import time from '../../../Assets/img/time.svg';
+import search from '../../../Assets/img/MainSite/6424.jpg';
 
+
+// style for the cards
+import '../../../Assets/Style/Card/card.scss';
 
 var picsize = 4 + 'rem';
 
-function CardCategory({image, avatar, name, price, title, ctaButton}){
+function CardCategory({image, name, level, title, ctaButton,target}){
     return (
-        <div className="g-card">
-                <div className="inner-content">
-                    <div className="image">
-                        <img src={image} alt="" />
-                        <div className="name">
-                            <img src={avatar} alt="" />
-                            <p>{name}</p>
-                        </div>
+        <>
+        <div className="card">
+                <div className='card-top'>
+                    <div className='card-headertext'>
+                        <p>{name}</p>
                     </div>
-                    <div className="card-content">
-                        <h6 className="card-title">{title}</h6>
-                        <p>Price <span className="price">{price}</span> &nbsp; &nbsp; <span className="l-text">1 of 15</span></p>
-                        <p>Highest Bid : &nbsp; <span className="price">{price}</span> </p>
-                        <div className="duration">
-                            <p><img src={time} alt="" /> 7 Hours Ago</p>
-                            <p><img src={heart} alt="" /> 200 Likes</p>
+                    <div className='card-bottom'>
+                        <img src={image} className="" alt="logo" />
+                        <div className='card-details'>
+                            <img className='detailslogo' src={search}  alt="logo" />
+                            <img className='difficultlogo' src={heart}  alt="logo" />
                         </div>
-                        {/* <div className="cta-btn">
-                            <CtaButton name={'View More Details'}/>
-                        </div> */}
                     </div>
                 </div>
         </div>
+        <div className='categories-details'>
+            <h2>Beschreibung</h2> 
+            <p>{title}</p>
+        </div>
+        </>
     );
 }
 

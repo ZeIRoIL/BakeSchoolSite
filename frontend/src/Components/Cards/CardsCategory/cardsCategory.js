@@ -1,29 +1,57 @@
 import React from 'react';
+import axios from "axios";
 import  CardCategory  from './cardCategory';
+import Spinner from 'react-bootstrap/Spinner';
+import { useEffect } from 'react';
 
 // Test Data
 import picture from '../../../Assets/img/logo.svg';
 
+// style for the cards
+import '../../../Assets/Style/Card/card.scss';
 
-// Style
-import '../../../Assets/Style/Card/card.css';
+// // Axios (API Interfaces)
+// import CategorieData from '../../../Api/CategorieData';
 
-const CardsCategory = () => {
-    return (
-        <div>
-            <div className="category-cards-main">
-            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
-            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
-            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
-            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
-            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
-            <CardCategory image={picture} avatar={picture} name={'@Joel Clock'} price={'0.067 ETH'} title={'Just a dummy title'} />
-        
-            </div>
+// Axios Details Instanz!
+const api = axios.create({
+  baseURL: 'https://localhost:5001/api/Category'
+})
+
+// If the data is finish loading
+const isLoaded = false;
+export default class CardsCategory extends React.Component {
+  
+  state= {
+    category: []
+  }
+
+    constructor(props){
+        super(props);
+        // The Api get the data from the internet and set the variable "category"
+        api.get('/').then(res => {
+          console.log(res.data)
+          this.setState({category: res.data})})
+        this.isLoaded = true
+    }
+
+  render() {
+    if (isLoaded) {
+      return <Spinner animation="border" className='spinner' variant="secondary"  />;
+    } else {
+        return(
+            <div>
+                {this.state.category.map(cat =>
+                    <div key={cat.categoryId} className="category-cards-main">
+                        <CardCategory image={picture} name={cat.details.categoryName} level={cat.details.difficultyLevel} title={cat.details.categoryText} target={cat.details.categoryName} />
+                    </div>
+                )}
+                  
             
-        
-        </div>
-    )
+            </div>
+           
+           
+        )
+    }
+  }
 }
-
-export default CardsCategory
