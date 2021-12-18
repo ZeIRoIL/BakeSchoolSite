@@ -1,12 +1,12 @@
 // Assets
 import logo from '../../Assets/img/logo.svg';
 
-
 // Pages
 import Home from '../../Pages/mainPage';
 import LoginPage from '../../Pages/login';
 import Categorie from '../../Pages/categories';
 import RewardPage from '../../Pages/rewardPage';
+
 
 // Style
 import '../../Assets/Style/Navigation/navigation.scss'; // Tell webpack that Button.js uses these styles
@@ -15,6 +15,8 @@ import '../../Assets/Style/Navigation/navigation.scss'; // Tell webpack that But
 import React, { Component } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { Routes, Route, Link } from "react-router-dom";
+import CardCategory from '../../Components/Cards/CardsCategory/cardCategory';
+import { Zucker } from '../../Pages/Description/Zucker';
 
 export class Navigation extends Component {
     render() {
@@ -49,7 +51,11 @@ export class Navigation extends Component {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<LoginPage />} />
-                    <Route path="/categorie" element={<Categorie />} />
+                    <Route path="/categorie" element={<Categorie />}/>
+                    
+        
+                  
+                    <Route path="categorie/Zucker" element={<Zucker/>} />
                     <Route path="/reward" element={<RewardPage />} />
                 </Routes>
                 </div>
