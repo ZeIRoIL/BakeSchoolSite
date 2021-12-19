@@ -6,7 +6,9 @@ import Home from '../../Pages/mainPage';
 import LoginPage from '../../Pages/login';
 import Categorie from '../../Pages/categories';
 import RewardPage from '../../Pages/rewardPage';
-
+import { Zucker } from '../../Pages/Description/Zucker';
+import Recipes from '../../Pages/Recipes/recipes';
+import Recipe from '../../Pages/Recipes/recipe';
 
 // Style
 import '../../Assets/Style/Navigation/navigation.scss'; // Tell webpack that Button.js uses these styles
@@ -15,8 +17,9 @@ import '../../Assets/Style/Navigation/navigation.scss'; // Tell webpack that But
 import React, { Component } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { Routes, Route, Link } from "react-router-dom";
-import CardCategory from '../../Components/Cards/CardsCategory/cardCategory';
-import { Zucker } from '../../Pages/Description/Zucker';
+
+
+
 
 export class Navigation extends Component {
     render() {
@@ -29,8 +32,8 @@ export class Navigation extends Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link href="#features">Rezept</Nav.Link>
-                                <Nav.Link href="/categorie">Kategorie</Nav.Link>
+                                <Nav.Link href="/recipes">Rezept</Nav.Link>
+                                <Nav.Link href="/category">Kategorie</Nav.Link>
                             </Nav>
                             <Nav>
                                 <Nav.Link href="/reward">Belohnungen</Nav.Link>
@@ -50,15 +53,24 @@ export class Navigation extends Component {
 
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/login" element={<LoginPage />} />
-                    <Route path="/categorie" element={<Categorie />}/>
-                    
-        
-                  
-                    <Route path="categorie/Zucker" element={<Zucker/>} />
-                    <Route path="/reward" element={<RewardPage />} />
+                    <Route path="login" element={<LoginPage />} />
+                    <Route path="category" element={<Categorie />} />
+                    <Route path="recipes" element={<Recipes />} >
+                        <Route
+                            index
+                            element={
+                                <main style={{ padding: "1rem" }}>
+                                    <p>Wähle ein Rezept aus!</p>
+                                </main>
+                            }
+                        />
+                        <Route path=":recipeId" element={<Recipe />} />
+                    </Route>
+                
+                    <Route path="category/Zucker" element={<Zucker />} />
+                    <Route path="reward" element={<RewardPage />} />
                 </Routes>
-                </div>
-                )
+            </div>
+        )
     }
 }

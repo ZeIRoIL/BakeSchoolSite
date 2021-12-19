@@ -1,10 +1,15 @@
 import { Button } from 'react-bootstrap';
 import React from 'react';
 
+import Image from '../../Assets/img/logo.svg';
+
 
 export const Zucker = () => {
     return (
         <div>
+            <div>
+            <img src={Image} width={500} className="descriptionImg" alt="logo" /> 
+            </div>
             <h1>Beschreibung</h1>
             <div>
                 <p>Zucker ist meist ein Einfach oder Zweifachzucker. Der Zucker wird auch als Kohlenhydray bezeichnet!</p>
