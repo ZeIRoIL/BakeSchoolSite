@@ -23,35 +23,35 @@ function SwitchCase(props)
 {
 var elementRight =   
 
-            <Container className="cardmain mainblock-right ">
-                    <Row>
-                        <Col className="cardText ">
+            <div className="container cardmain mainblock-right ">
+                    <div className='row'>
+                        <div className="col cardText ">
                             empor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                             <br />
                             <Button className="mainbtn" variant="primary" size="lg">
                                 Mehr Details
                             </Button>
-                        </Col>
-                        <Col xs={3} md={5}>
+                        </div>
+                        <div className='col'>
                             <Image src={pic1} className="mainblockimg" roundedCircle />
-                        </Col>
-                    </Row> 
-            </Container>
+                        </div>
+                    </div> 
+            </div>
 var elementLeft =   
-            <Container className="cardmain mainblock-left ">
-                <Row>
-                    <Col xs={3} md={5}>
+            <div className="container cardmain mainblock-left ">
+                <div className='row'>
+                    <div className='col' >
                         <Image src={pic1} className="mainblockimg" roundedCircle />
-                    </Col>
-                    <Col className="cardText">
+                    </div>
+                    <div  className=" col cardText">
                         empor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         <br />
                         <Button className="mainbtn" variant="primary" size="lg">
                             Mehr Details
                         </Button>
-                    </Col>
-                </Row> 
-            </Container>
+                    </div>
+                </div> 
+            </div>
 
     switch(props.name) {
         case 'left':

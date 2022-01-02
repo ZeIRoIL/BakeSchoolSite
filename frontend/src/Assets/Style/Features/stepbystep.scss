@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.stepsection{
+    background-color: wheat;
+    opacity: 0.6;
+}
+.stepcontainer{
+    border: black solid 4px;
+}
+i{
+    size: 400px !important;
+}
+.stepBox{
+
+    .none{
+        color: $second-color !important;
+    }
+    .show{
+        color: $primary-color !important;
+    }
+    padding: 0 0 0 0  !important;
+    h2{
+    display: inline;
+    }
+    hr{
+        height: 10px !important ;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0; 
+    }
+}
+
+
+.stepline {
+    width: 166px;
+    height: 6px;
+    background: lightblue;
+    display: inline-flex;
+    margin-left: 20px;
+}
