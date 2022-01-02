@@ -5,18 +5,17 @@ import CardsCategory2 from '../Components/Cards/CardsCategory/cardsCategory2';
 import '../Assets/Style/pages/categories.scss'
 
 const categoriesPage = () => {
-    return (
-        <div>
-        <div className="cat-main">
-        <h1  style={{ marginTop: '50px'}} >Suche eine Kategorie!</h1>
+  return (
+    <div>
+      <div className="cat-main">
+        <h1 style={{ marginTop: '50px' }} >Kategorien</h1>
         
         <div className='card-section' >
-          <CardsCategory/>
+          <CardsCategory />
         </div>
-        <a href='https://www.freepik.com/photos/food'>Food photo created by freepik - www.freepik.com</a>
       </div>
-        </div>
-    );
-} 
+    </div>
+  );
+}
 
- export default categoriesPage
+export default categoriesPage
