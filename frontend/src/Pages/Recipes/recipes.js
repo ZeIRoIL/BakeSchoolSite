@@ -1,7 +1,7 @@
 import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 import { getRecipes } from "../../Data/Mocks/recipesData.js";
 
-export default function Invoices() {
+export default function Recipes() {
     // get the data from the Api Fetch! It is needed to load for the next sitepage
   let recipes = getRecipes();
   let [searchParams, setSearchParams] = useSearchParams();

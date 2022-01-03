@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Card, Button, Placeholder } from 'react-bootstrap';
 
 // Routing
-import { Outlet, NavLink, Routes,Route } from "react-router-dom";
+import { Outlet, NavLink, Routes, Route } from "react-router-dom";
 
 
 import heart from '../../../Assets/img/heart.svg';
