@@ -1,7 +1,7 @@
-
+@import "../variables.scss";
 
 .card-section{
-    background-color: rgb(210, 247, 250);
+    background-color: $primary-color;
     margin: 3rem;
     border-radius: 5%;
     padding-top: 3rem;

@@ -9,7 +9,7 @@ const api = axios.create({
   export default function CategorieData () {
 
     // Use axio for the API/Get
-    api.get('/')
+    api.get('/')        // return Data here
     .then(res => {
         console.log(res.data),
         items = res.data,

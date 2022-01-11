@@ -1,4 +1,11 @@
+@import "../variables.scss";
+
 .nav-color
 {
-    background-color: rgb(0, 60, 255);
+    background-color: $primary-color;
+
+    a{
+        color: $text-nav ;
+    }
+    
 }

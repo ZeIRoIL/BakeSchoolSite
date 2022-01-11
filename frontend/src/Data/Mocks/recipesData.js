@@ -16,7 +16,8 @@ let recipes = [
         {
           step: 1,
           text: "Zuerst bringt man das Wasser mit dem ganzen Zucker in einer Pfanne zu kochen",
-          hint:"undefined"
+          hint:"undefined",
+          image: "/static/media/logo.6ce24c58.svg"
         },
         {
           step: 2,
@@ -30,7 +31,8 @@ let recipes = [
             step: 2,
             text: "Die Mandeln sollten wieder ein wenig zu glänzen anfangen und danach auf ein Blech herausputzen und auseinander geben und auskühlen lassen"
           }
-          ]
+          ],
+          image: "/static/media/logo.6ce24c58.svg"
         }
       ]
   },

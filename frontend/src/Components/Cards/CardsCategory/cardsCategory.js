@@ -32,14 +32,15 @@ let categories = getCategories();
 // If the data is finish loading
 const isLoaded = false;
 
-let [category, setCategory] = [];
+
 
 
 
 export default function CardsCategory () {
 
   let [searchParams,setSearchParams ] = useSearchParams();
-
+  // let [category, setCategory] = useState([]);
+  
   // constructor(props) {
   //   super(props);
   //   // The Api get the data from the internet and set the variable "category"
