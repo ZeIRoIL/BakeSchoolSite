@@ -17,6 +17,7 @@ import '../../Assets/Style/Navigation/navigation.scss'; // Tell webpack that But
 import React, { Component } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { Routes, Route, Link } from "react-router-dom";
+import MainRecipesPage from '../../Pages/Recipes/mainRecipesPage';
 
 
 
@@ -59,9 +60,9 @@ export class Navigation extends Component {
                         <Route
                             index
                             element={
-                                <main style={{ padding: "1rem" }}>
-                                    <p>Wähle ein Rezept aus!</p>
-                                </main>
+                                
+                                    <MainRecipesPage />
+                                
                             }
                         />
                         <Route path=":recipeId" element={<Recipe />} />
