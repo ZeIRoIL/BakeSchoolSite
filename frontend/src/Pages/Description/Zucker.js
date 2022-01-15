@@ -1,8 +1,11 @@
 import { Button } from 'react-bootstrap';
 import React from 'react';
 
-import Image from '../../Assets/img/logo.svg';
+import {
+    Link
+  } from "react-router-dom";
 
+import Image from '../../Assets/img/logo.svg';
 
 export const Zucker = () => {
     return (
@@ -108,10 +111,13 @@ export const Zucker = () => {
                     <p>Hier werden die verschiedenen Formen des Zuckers aufgezählt</p>
                 </div>
             </div>
-            <div>
-            <Button className="mainbtn" variant="primary" size="lg">
-                               Zum Quiz!
-                            </Button>
+            <div> 
+                <Link to="/questions">
+                    <button className="mainbtn" >
+                        Zum Quiz!
+                    </button>
+                </Link>
+
             </div>
         </div>
     )

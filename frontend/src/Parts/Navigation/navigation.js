@@ -9,6 +9,7 @@ import RewardPage from '../../Pages/rewardPage';
 import { Zucker } from '../../Pages/Description/Zucker';
 import Recipes from '../../Pages/Recipes/recipes';
 import Recipe from '../../Pages/Recipes/recipe';
+import QuestionPage from '../../Pages/questionPage';
 
 // Style
 import '../../Assets/Style/Navigation/navigation.scss'; // Tell webpack that Button.js uses these styles
@@ -70,6 +71,7 @@ export class Navigation extends Component {
                 
                     <Route path="category/Zucker" element={<Zucker />} />
                     <Route path="reward" element={<RewardPage />} />
+                    <Route path="questions" element={<QuestionPage />} />
                 </Routes>
             </div>
         )
