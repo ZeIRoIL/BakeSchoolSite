@@ -1,17 +1,17 @@
 let steps = [
     {
       name: "Schritt 1",
-      text: "Dast ist der Text1",
+      text: "Beschreibung suchen",
       number: 1,
     },
     {
         name: "Schritt 2",
-        text:"Das ist der Text2",
+        text:"Quiz machen",
         number: 2,
     },
     {
         name: "Schritt 3",
-        text:"Das ist der Text 3",
+        text:"Rezept bekommen",
         number: 3,
     }
   ];

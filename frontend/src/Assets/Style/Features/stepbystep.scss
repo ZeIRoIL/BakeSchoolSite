@@ -1,14 +1,17 @@
 @import "../variables.scss";
 
 .stepsection{
-    background-color: wheat;
+    background-color: $primary-color;
     opacity: 0.6;
 }
 .stepcontainer{
-    border: black solid 4px;
+   
 }
 i{
     size: 400px !important;
+}
+.stepimg{
+    height: 12rem !important;
 }
 .stepBox{
 
@@ -26,6 +29,10 @@ i{
         height: 10px !important ;
         margin: 0 0 0 0;
         padding: 0 0 0 0; 
+    }
+    .step-amount{
+        font-size: 3rem;
+        color: black;
     }
 }
 

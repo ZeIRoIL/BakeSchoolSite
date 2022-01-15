@@ -1,24 +1,27 @@
+@import "../variables.scss";
+
+
 .mainblockimg{
-    width: 400px;
+    width: 350px;
 }
 .cardmain{
-    margin-top: 10px ;
+    margin-top: 15px ;
     font-size: 1rem;
     text-align: center;
     margin-bottom: 10px;
     padding: 10px;
-    
+    border: solid black 4px;
     border-radius: 30px;
     transition: all 1s ease-in-out;
-    animation: colors 3s infinite ease-in-out;
     height: auto;
     width: 100vw;
 }
 .mainblock-left{
-    background: linear-gradient(130deg,#c7bac2 ,#15b3f1 50%,#23388b);
+    // background: linear-gradient(130deg,#B9BF8C ,#AF9C7A 50%,#B9BF8C);
+    background: $second-color;
 }
 .mainblock-right{
-    background-color: wheat;
+    background-color: $primary-color;
     
 }
 .cardText{

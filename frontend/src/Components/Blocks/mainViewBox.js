@@ -5,10 +5,10 @@
 import "../../Assets/Style/Blocks/mainViewBox.scss";
 
     //img
-import pic1 from "../../Assets/img/MainSite/pic1.jpg";
-import pic2 from "../../Assets/img/MainSite/pic2.jpg";
-import pic3 from "../../Assets/img/MainSite/pic3.jpg";
-import pic4 from "../../Assets/img/MainSite/pic1.jpg";
+import pic1 from "../../Assets/img/MainSite/Backkurse.jpeg";
+import pic2 from "../../Assets/img/MainSite/KategorieSlider.jpeg";
+import pic3 from "../../Assets/img/MainSite/FragezeichenSlider.jpeg";
+import pic4 from "../../Assets/img/MainSite/RezeptSlider.jpeg";
 
 export default function mainViewBox() {
     return (
