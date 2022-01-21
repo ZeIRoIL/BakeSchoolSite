@@ -1,5 +1,7 @@
 @import '../variables.scss';
-
+.footer-main{
+    background-color: $primary-color;
+}
 .footercontainer {
     background-color: $primary-color;
     height: auto;

@@ -1,5 +1,6 @@
 import logo from './Assets/img/logo.svg';
 import './App.css';
+import './Assets/Style/global.scss'
 
 
 // Components

@@ -19,7 +19,7 @@ export class CarouselMain extends Component {
                     <div class="carousel-item active">
                         <img src={pic1} class="caroImg d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block slider-text">
-                            <p className='fs-3'>Wie entsteht Brot? Was sind unsere Getreiden? Mehr Wissen? </p>
+                            <p className='fs-3'>Wie entsteht Brot? Wie kann man Schokolade verarbeiten? Mehr Wissen? </p>
                             <button  type='button'>Mehr Wissen!</button>
                         </div>
                     </div>

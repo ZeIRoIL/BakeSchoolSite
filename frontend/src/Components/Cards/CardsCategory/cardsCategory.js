@@ -70,7 +70,6 @@ export default function CardsCategory () {
 
         // </div>
         //  Mock Data Turn
-      
         <div>
           {/* the Searchbutton be able to filter the category */}
           <input

@@ -3,6 +3,11 @@
 #carouselExampleCaptions{
     transition: all 1s ease-in-out !important;
 }
+.carousel-control-prev-icon .carousel-control-next-icon {
+    background-color: red;
+    border-radius: 30px;
+    padding: 2rem;
+}
 
 .slider-text{
     background-color: rgba(209, 218, 198, 0.52);
@@ -10,8 +15,8 @@
     border: solid 4px $primary-color;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-    right: 30% !important;
-    left: 30% !important;
+    right: 25% !important;
+    left: 25% !important;
     h5{
         color: black;
         font-size: 3rem;

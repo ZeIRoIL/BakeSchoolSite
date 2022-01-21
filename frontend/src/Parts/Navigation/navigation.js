@@ -27,7 +27,7 @@ export class Navigation extends Component {
     render() {
         return (
             <div>
-                <Navbar collapseOnSelect className="nav-color" expand="lg" variant="dark">
+                <Navbar collapseOnSelect className="navcustom" expand="lg" variant="dark">
                     <Container>
                         <img src={logo} style={{ width: '4rem' }} />
                         <Navbar.Brand href="/">Backen und Lernen für Kinder</Navbar.Brand>

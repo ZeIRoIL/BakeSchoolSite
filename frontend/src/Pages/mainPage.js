@@ -17,6 +17,8 @@ function mainPage ()  {
         <StepByStep/>
         <MainBlock side={"left"}/>
         <MainBlock side={'right'}/>
+        <MainBlock side={"left"}/>
+        <MainBlock side={'right'}/>
 
         <MainViewBox />
         

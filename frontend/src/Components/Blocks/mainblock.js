@@ -24,7 +24,7 @@ function mainBlock ({side}) {
 function SwitchCase(props)
 {
 var elementRight =   
-
+            <div className="mainblockHidden container">
             <div className="container cardmain mainblock-right ">
                     <div className='row'>
                         <div className="col cardText ">
@@ -36,7 +36,8 @@ var elementRight =
                         <div className='col'>
                             <Image src={pic1} className="mainblockimg" roundedCircle />
                         </div>
-                    </div> 
+                   </div> 
+                </div> 
             </div>
 var elementLeft =   
             <div className="container cardmain mainblock-left ">
