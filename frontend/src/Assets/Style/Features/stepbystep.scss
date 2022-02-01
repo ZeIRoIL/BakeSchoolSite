@@ -12,34 +12,37 @@ i{
     size: 400px !important;
 }
 .step-card-container{
-    
-.stepimg{
-        height: 12rem !important;
         border-radius: 30px;
-        border: solid 6px black;
-}
-.stepBox{
+    .step-number{
+        
+    }
+    .stepimg{
+            height: 12rem !important;
+            border-radius: 30px;
+            border: solid 6px black;
+    }
+    .stepBox{
 
-    .none{
-        color: $second-color !important;
+        .none{
+            color: $second-color !important;
+        }
+        .show{
+            color: $primary-color !important;
+        }
+        padding: 0 0 0 0  !important;
+        h2{
+        display: inline;
+        }
+        hr{
+            height: 10px !important ;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0; 
+        }
+        .step-amount{
+            font-size: 3rem;
+            color: black;
+        }
     }
-    .show{
-        color: $primary-color !important;
-    }
-    padding: 0 0 0 0  !important;
-    h2{
-    display: inline;
-    }
-    hr{
-        height: 10px !important ;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0; 
-    }
-    .step-amount{
-        font-size: 3rem;
-        color: black;
-    }
-}
 }
 
 
