@@ -2,19 +2,26 @@
 
 .mainblockHidden
 {
-    background-color: aliceblue;
     padding-left: 20px;
 }
-.mainblockimg{
+.mainblockimgright{
     width: 350px;
+    margin-top: -5rem;
+    border-radius: 1rem;
+    border: solid 3px black;
+}
+.mainblockimgleft{
+    width: 350px;
+    margin-top: -5rem;
+    border-radius: 1rem;
+    border: solid 3px black;
 }
 .cardmain{
-    margin-top: 15px ;
+    margin-top: 8rem ;
     font-size: 1rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 4rem;
     padding: 10px;
-    border: solid black 4px;
     border-radius: 30px;
     transition: all 1s ease-in-out;
     height: auto;
@@ -22,12 +29,15 @@
 }
 .mainblock-left{
     // background: linear-gradient(130deg,#B9BF8C ,#AF9C7A 50%,#B9BF8C);
-    background: $second-color;
+    
 }
 .mainblock-right{
-    background-color: $primary-color;
+    
     
 }
 .cardText{
     align-self: center;
+}
+hr{
+    height: 20px;
 }

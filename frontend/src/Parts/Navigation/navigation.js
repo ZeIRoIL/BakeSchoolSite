@@ -1,5 +1,5 @@
 // Assets
-import logo from '../../Assets/img/logo.svg';
+import logo from '../../Assets/img/logo.png';
 
 // Pages
 import Home from '../../Pages/mainPage';
@@ -29,7 +29,7 @@ export class Navigation extends Component {
             <div>
                 <Navbar collapseOnSelect className="navcustom" expand="lg" variant="dark">
                     <Container>
-                        <img src={logo} style={{ width: '4rem' }} />
+                        <img src={logo} style={{ width: '3rem' }} />
                         <Navbar.Brand href="/">Backen und Lernen für Kinder</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">

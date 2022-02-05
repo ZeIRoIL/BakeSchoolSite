@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 
 // Assets
-import pic1 from '../../Assets/img/MainSite/KategorieSlider.jpeg';
-import pic2 from '../../Assets/img/MainSite/Backkurse.jpeg';
+import pic1 from '../../Assets/img/MainSite/brot.jpg';
+import pic2 from '../../Assets/img/MainSite/gebäck.jpg';
 
 // Style
 import '../../Assets/Style/Blocks/mainblock.scss';
@@ -34,16 +34,17 @@ var elementRight =
                             <button type='button' className='mainbtn'>Schlau werden :) </button>
                         </div>
                         <div className='col'>
-                            <Image src={pic1} className="mainblockimg" roundedCircle />
+                            <Image src={pic1} className="mainblockimgright"  />
                         </div>
                    </div> 
                 </div> 
+                <hr></hr>
             </div>
 var elementLeft =   
             <div className="container cardmain mainblock-left ">
                 <div className='row'>
                     <div className='col' >
-                        <Image src={pic2} className="mainblockimg" roundedCircle />
+                        <Image src={pic2} className="mainblockimgleft"  />
                     </div>
                     <div  className=" col cardText">
                         <h2>Keine Backkurse gefunden?</h2>    
@@ -55,6 +56,7 @@ var elementLeft =
                         <button className='mainbtn'  type='button'>Zu einem Backkurs</button>
                     </div>
                 </div> 
+                <hr></hr>
             </div>
 
     switch(props.name) {

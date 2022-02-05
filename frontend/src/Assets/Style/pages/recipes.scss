@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+.recipesList{
+    background-color: $second-color;
+    a{
+        color: $text-nav;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white !important;
+    }
+    a:active{
+        color: red !important;
+    }
+}
+
+.recipes-container{
+    height: 80vh;
+    .card-recipe{
+        background-color: $second-color;
+        border-radius: 1rem;
+    }
+}

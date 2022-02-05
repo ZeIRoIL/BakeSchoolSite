@@ -21,7 +21,7 @@ var picsize = 4 + 'rem';
 function CardCategory({number, image, name, level, title, ctaButton, target }) {
     return (
         <>
-            <div className="card">
+            <div className="card shadow-lg">
                 <div className='card-top'>
                     <div className='card-headertext'>
                         <p>{name}</p>

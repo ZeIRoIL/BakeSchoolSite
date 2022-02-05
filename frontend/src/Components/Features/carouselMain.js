@@ -33,7 +33,6 @@ export class CarouselMain extends Component {
                     <div class="carousel-item">
                         <img src={pic3} class="caroImg d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block slider-text">
-                        
                             <p className='fs-3'>Du möchtest mit dem Profi's mitarbeiten und lernen?<br/>Hier sind die Backkurse!</p>
                             <button  type='button'>Mit einem Profi backen!</button>
                         </div>

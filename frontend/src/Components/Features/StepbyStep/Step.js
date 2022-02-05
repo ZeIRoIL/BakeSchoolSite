@@ -13,12 +13,12 @@ export default function Step({ number }) {
     // const [selected, setselected] = useState('none');
 
     return (
-        <div className='step-card-container shadow bg-body p-3 mb-5'>
+        <div className='step-card-container shadow p-1 mb-1 pt-4'>
             <div>
-                <div className='step-number'>
+                {/* <div className='step-number'>
                     <p>{number}</p>
-                </div>
-                <br />
+                </div> */}
+                
 
                 <div>
                     {/* <div>
