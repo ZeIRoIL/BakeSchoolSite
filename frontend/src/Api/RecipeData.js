@@ -15,8 +15,12 @@ export async function getRecipes() {
 
 export async function getRecipe(number) {
 
-        return new Promise((resolve, reject)=> api.get("/")
-        .then(res => resolve(res.data.find( recipe => recipe.number === number)))
+        return new Promise((resolve, reject)=> api.get('/', {
+                params: {
+                  ID: number
+                }
+              })
+        .then(res => resolve(res.data))
         .catch(e => reject(new Error("Fehler bei API-Request")))
         );
         

@@ -17,14 +17,14 @@ console.log(ingredients);
               </tr>
             </thead>
             <tbody>
-              {ingredients
+              {/* {ingredients
                 .map(ingredient =>
                   <tr>
                     <td>{ingredient.data}</td>
                     <td>{ingredient.amount}</td>
                     <td>{ingredient.unit}</td>
                   </tr>
-                )}
+                )} */}
             </tbody>
           </table>
         </div>

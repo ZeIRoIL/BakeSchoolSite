@@ -46,7 +46,7 @@ export default function Recipes() {
           .filter((recipe) => {
             let filter = searchParams.get("filter");
             if (!filter) return true;
-            let name = recipe.Name.toLowerCase();
+            let name = recipe.name.toLowerCase();
             return name.includes(filter.toLowerCase());
           })
           .map((recipe) => (
