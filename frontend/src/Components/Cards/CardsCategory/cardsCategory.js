@@ -16,13 +16,6 @@ import picture from '../../../Assets/img/logo.svg';
 import '../../../Assets/Style/Card/card.scss';
 import '../../../Assets/Style/Button/searchCategory.scss';
 
-// // Axios (API Interfaces)
-// import CategorieData from '../../../Api/CategorieData';
-
-// Axios Details Instanz!
-const api = axios.create({
-  baseURL: 'https://localhost:5001/api/Category'
-})
 
 // store data in a variabelen
 let categories = getCategories();
@@ -51,7 +44,7 @@ export default function CardsCategory () {
   // }
 
   
-
+  console.log(CategorieData());
  
     if (isLoaded) {
       return <Spinner animation="border" className='spinner' variant="secondary" />;

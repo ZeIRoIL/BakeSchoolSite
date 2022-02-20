@@ -17,7 +17,7 @@ function Hint(value) {
                         <div>
                             <i class="bi bi-info-circle"></i>
                             {/* <h5>{h.step}</h5> */}
-                            <p className="hinttext">{h.text}</p>
+                            <p className="hinttext">{h.Text}</p>
                         </div>
                     )
                 }
@@ -36,12 +36,12 @@ function RecipeList({ description }) {
                     <div className='container p-5'>
                         <div className='row'>
                         <div className='col-xl-9'>
-                        <h3>{des.step}</h3>
-                        <h5>{des.text}</h5>
-                        <Hint value={des.hint} />
+                        <h3>{des.Step}</h3>
+                        <h5>{des.Text}</h5>
+                        <Hint value={des.Hint} />
                         </div>
                         <div className='col-xl-3'>
-                            <img src={des.image} className="mainblockimg img-fluid" />
+                            <img src={des.Image} className="mainblockimg img-fluid" />
                         </div>
                         </div>
                     </div>

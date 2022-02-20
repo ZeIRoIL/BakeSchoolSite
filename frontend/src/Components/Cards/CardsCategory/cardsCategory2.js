@@ -3,51 +3,49 @@ import axios from "axios";
 import  CardCategory  from './cardCategory';
 import Spinner from 'react-bootstrap/Spinner'
 
-// Test Data
+// Test Picture
 import picture from '../../../Assets/img/logo.svg';
 
 // style for the cards
 import '../../../Assets/Style/Card/card.scss';
 
-// Axios (API Interfaces)
-import CategorieData from '../../../Api/CategorieData';
-
- const api = axios.create({
+const api = axios.create({
           baseURL: 'https://localhost:5001/api/Category'
         })
 
 export default class CardsCategory extends React.Component {
   
   state= {
-    name: []
+    name: [],
+    isLoaded: false
   }
     constructor(props){
         super(props);
         api.get('/').then(res => {
           console.log(res.data)
-          this.setState({name: res.data})
+          this.setState({
+            name: res.data,
+            isLoaded: true
+          })
         })
     }
 
   render() {
-    // const { error, isLoaded, items } = this.state;
-    // if (!error) {
-    //   return <div>Error: {error.message}</div>;
-    // } else if (!isLoaded) {
-    //   return <Spinner animation="border" variant="secondary"  />;
-    // } else {
+    const { isLoaded,name } = this.state;
+    if (!isLoaded) {
+      return <Spinner animation="border" variant="secondary"  />;
+    } else {
         return(
             <div>
-               {this.state.name.map(nam => <h2>{nam.details.categoryName}</h2>)}
-                 {/* {items.map(item => (
+                 {name.map(item => (
                     <div className="category-cards-main">
-                        <CardCategory image={picture} name={item.details.categoryName} level={'3'} title={'Just a dummy title'} />
+                        <CardCategory image={picture} name={item.Details.Name} level={'3'} title={item.Details.Text} />
                     </div>
-              ))}   */}
+              ))}  
             </div>
            
            
         )
     }
-  // }
+  }
 }

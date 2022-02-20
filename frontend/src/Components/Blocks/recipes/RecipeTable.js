@@ -5,6 +5,8 @@ import React from 'react'
 
 export default function RecipeTable({ingredients}) {
 
+console.log(ingredients);
+
     return (
         <div>
             <table className="table">
@@ -18,8 +20,9 @@ export default function RecipeTable({ingredients}) {
               {ingredients
                 .map(ingredient =>
                   <tr>
-                    <td>{ingredient.data}</td>
-                    <td>{ingredient.amount}</td>
+                    <td>{ingredient.Data}</td>
+                    <td>{ingredient.Amount}</td>
+                    <td>{ingredient.Unit}</td>
                   </tr>
                 )}
             </tbody>

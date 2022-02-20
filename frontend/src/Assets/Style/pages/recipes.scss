@@ -1,14 +1,15 @@
 @import "../variables.scss";
 
 .recipesList{
-    background-color: $second-color;
+    background-color: transparent;
+    padding: 3% !important;
     a{
         color: $text-nav;
         font-size: 1.2rem;
         text-decoration: none;
     }
     a:hover{
-        color: white !important;
+        color: $primary-color;
     }
     a:active{
         color: red !important;

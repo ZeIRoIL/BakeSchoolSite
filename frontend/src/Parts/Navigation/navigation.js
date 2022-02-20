@@ -8,7 +8,9 @@ import Categorie from '../../Pages/categories';
 import RewardPage from '../../Pages/rewardPage';
 import { Zucker } from '../../Pages/Description/Zucker';
 import Recipes from '../../Pages/Recipes/recipes';
+import RecipesApi from '../../Pages/Recipes/recipesApi';
 import Recipe from '../../Pages/Recipes/recipe';
+import RecipeApi from '../../Pages/Recipes/recipeApi';
 import QuestionPage from '../../Pages/questionPage';
 
 // Style
@@ -57,7 +59,7 @@ export class Navigation extends Component {
                     <Route path="/" element={<Home />} />
                     <Route path="login" element={<LoginPage />} />
                     <Route path="category" element={<Categorie />} />
-                    <Route path="recipes" element={<Recipes />} >
+                    <Route path="recipes" element={<RecipesApi />} >
                         <Route
                             index
                             element={
@@ -66,7 +68,7 @@ export class Navigation extends Component {
                                 
                             }
                         />
-                        <Route path=":recipeId" element={<Recipe />} />
+                        <Route path=":recipeId" element={<RecipeApi />} />
                     </Route>
                 
                     <Route path="category/Zucker" element={<Zucker />} />
