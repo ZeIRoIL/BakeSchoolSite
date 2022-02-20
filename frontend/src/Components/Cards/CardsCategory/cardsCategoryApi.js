@@ -41,8 +41,8 @@ export default function CardsCategory () {
     ;
     
   }, []);
-  
- 
+
+    console.log(category);
     if(error)
     {
       return <p>{error}</p>;
@@ -52,11 +52,10 @@ export default function CardsCategory () {
     } else {
       return (
         <div>
-
           {/* Filter the categories with the user searchdata  */}
           {category.map(cat =>
-            <div key={cat.Number} className="category-cards-main">
-                <CardCategory image={picture} name={cat.Name} />
+            <div key={cat.details.number} className="category-cards-main">
+                <CardCategory image={picture} name={cat.details.name} />
             </div>
           )}
           

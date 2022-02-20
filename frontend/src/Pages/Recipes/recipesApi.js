@@ -56,10 +56,10 @@ export default function Recipes() {
                 margin: "1rem 0",
                 color: isActive ? "red" : "",
               })}
-              to={`/recipes/${recipe.Number}`}
-              key={recipe.Number}
+              to={`/recipes/${recipe.number}`}
+              key={recipe.number}
             >
-              {recipe.Name}
+              {recipe.name}
             </NavLink>
           ))}
       </nav>

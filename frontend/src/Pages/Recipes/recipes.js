@@ -3,7 +3,7 @@ import { getRecipes } from "../../Data/Mocks/recipesData.js";
 
 import '../../Assets/Style/pages/recipes.scss';
 
-export default function Recipes() {
+function Recipes() {
     // get the data from the Api Fetch! It is needed to load for the next sitepage
   let recipes = getRecipes();
   let [searchParams, setSearchParams] = useSearchParams();

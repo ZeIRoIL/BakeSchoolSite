@@ -20,9 +20,9 @@ console.log(ingredients);
               {ingredients
                 .map(ingredient =>
                   <tr>
-                    <td>{ingredient.Data}</td>
-                    <td>{ingredient.Amount}</td>
-                    <td>{ingredient.Unit}</td>
+                    <td>{ingredient.data}</td>
+                    <td>{ingredient.amount}</td>
+                    <td>{ingredient.unit}</td>
                   </tr>
                 )}
             </tbody>

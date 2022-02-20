@@ -22,14 +22,12 @@ export default function Recipe() {
   
 
   //get data from the recipes Data
-  if(recipe)
-  {
-    let ingredients = recipe.Ingredients;
-    let description = recipe.Description;
-  }
+    let ingredients = recipe.ingredients;
+    let description = recipe.description;
+  
  
 
-  console.log(ingredients);
+  
 
   useEffect(() => {
     getRecipe(parseInt(params.recipeId, 10))
@@ -39,12 +37,13 @@ export default function Recipe() {
       });
   }, []);
 
+  console.log(recipe);
 
   return (
     <main className="container p-5" style={{ padding: "1rem" }}>
       <div className="row">
         <div className="col-xl-3">
-          <h1>{recipe.Name}</h1>
+          <h1>{recipe.name}</h1>
           <RecipeTable ingredients={ingredients} />
         </div>
         <div className="col-xl-7">
