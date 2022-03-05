@@ -1,5 +1,10 @@
 @import "../variables.scss";
 
+.recipeHeader
+{
+    color: #DC5C49;
+}
+
 .recipesList{
     background-color: transparent;
     padding: 3% !important;
@@ -12,15 +17,18 @@
         color: $primary-color;
     }
     a:active{
-        color: red !important;
+        color: #DC5C49 !important;
     }
 }
 
 .recipes-container{
     height: 80vh;
+
     .card-recipe{
-        background-color: $second-color;
-        border-radius: 1rem;
-        
+
+        .stepImgRecipes
+        {
+            width: 20rem;
+        }
     }
 }

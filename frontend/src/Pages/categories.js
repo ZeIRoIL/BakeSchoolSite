@@ -12,7 +12,7 @@ const categoriesPage = () => {
   return (
     <div>
       <div className="cat-main">
-        <h1 style={{ marginTop: '50px' }} >Kategorien</h1>
+        <h1 style={{ marginTop: '60px' }} className="backweltHeader fs-1">Backwelt</h1>
         
         <div className='card-section' >
           <CardsCategoryApi />

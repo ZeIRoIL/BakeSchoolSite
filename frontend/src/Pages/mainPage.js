@@ -7,13 +7,16 @@ import MainBlock from '../Components/Blocks/mainblock'; // const variable
 import StepByStep from '../Components/Features/StepbyStep/StepbyStep';
 import MainViewBox  from '../Components/Blocks/mainViewBox';
 
+import pic1 from '../Assets/img/MainSite/teri.png';
+
 
 function mainPage ()  {
     return (
         <div>
             
-        <CarouselMain/>
         
+        <div class="img-BakeSchool" alt="...">
+        </div>
         <StepByStep/>
         <MainBlock side={"left"}/>
         <MainBlock side={'right'}/>

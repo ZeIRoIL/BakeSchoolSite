@@ -1,9 +1,22 @@
 @import "variables.scss";
 
 h1,h2,h3,h4,h5,h6,p,a{
-    font-family: 'Short Stack', cursive;
-    font-size: large;
+    font-family: superior-title, serif;
+    font-weight: 400;
+    font-style: normal;
+    // font-family: 'Short Stack', cursive;
 }
 body{
     background-color: #FFFFFF !important;
+}
+
+.img-BakeSchool
+{
+    background: url(../img/MainSite/teri.png) no-repeat center center fixed; 
+    height: 100vh;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

@@ -31,16 +31,18 @@ export class Navigation extends Component {
             <div>
                 <Navbar collapseOnSelect className="navcustom" expand="lg" variant="dark">
                     <Container>
-                        <img src={logo} style={{ width: '3rem' }} />
-                        <Navbar.Brand href="/">Backen und Lernen für Kinder</Navbar.Brand>
+                
+                        <Navbar.Brand href="/">BackSchool</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
                                 <Nav.Link href="/recipes">Rezept</Nav.Link>
                                 <Nav.Link href="/category">Kategorie</Nav.Link>
+                                <Nav.Link href="/category">Backkurse</Nav.Link>
                             </Nav>
                             <Nav>
                                 <Nav.Link href="/reward">Belohnungen</Nav.Link>
+                                <Nav.Link href="/reward">Über uns</Nav.Link>
                                 <Nav.Link eventKey={2} href="/login">
                                     Mein Konto
                                 </Nav.Link>

@@ -19,22 +19,22 @@ export class CarouselMain extends Component {
                     <div class="carousel-item active">
                         <img src={pic1} class="caroImg d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block slider-text">
-                            <p className='fs-3'>Wie entsteht Brot? Wie kann man Schokolade verarbeiten? Mehr Wissen? </p>
-                            <button  type='button'>Mehr Wissen!</button>
+                            {/* <p className='fs-3'>Wie entsteht Brot? Wie kann man Schokolade verarbeiten? Mehr Wissen? </p> */}
+                            {/* <button  type='button'>Mehr Wissen!</button> */}
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src={pic2} class="caroImg d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block slider-text">
-                            <p className='fs-3'>Nach einem Quiz bekommst du eine Belohung. <br/>Ein Kinderrezept zum Nachbacken!</p>
-                               <button type='button'>Rezept haben!</button>
+                            {/* <p className='fs-3'>Nach einem Quiz bekommst du eine Belohung. <br/>Ein Kinderrezept zum Nachbacken!</p> */}
+                               {/* <button type='button'>Rezept haben!</button> */}
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src={pic3} class="caroImg d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block slider-text">
-                            <p className='fs-3'>Du möchtest mit dem Profi's mitarbeiten und lernen?<br/>Hier sind die Backkurse!</p>
-                            <button  type='button'>Mit einem Profi backen!</button>
+                            {/* <p className='fs-3'>Du möchtest mit dem Profi's mitarbeiten und lernen?<br/>Hier sind die Backkurse!</p> */}
+                            {/* <button  type='button'>Mit einem Profi backen!</button> */}
                         </div>
                     </div>
                 </div>
