@@ -1,12 +1,14 @@
 import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 import { getRecipes } from "../../Data/Mocks/recipesData.js";
 
+
 import '../../Assets/Style/pages/recipes.scss';
 
 function Recipes() {
     // get the data from the Api Fetch! It is needed to load for the next sitepage
   let recipes = getRecipes();
   let [searchParams, setSearchParams] = useSearchParams();
+
 
   return (
     <div style={{ display: "flex" }}>

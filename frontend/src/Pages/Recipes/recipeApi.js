@@ -19,16 +19,10 @@ export default function Recipe() {
 
   // let recipe = getRecipe(parseInt(params.recipeId, 10));
 
-  
-
   //get data from the recipes Data
     let ingredients = recipe.ingredients;
     let description = recipe.description;
   
- 
-
-  
-
   useEffect(() => {
     getRecipe(parseInt(params.recipeId, 10))
     .then(

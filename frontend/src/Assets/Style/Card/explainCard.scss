@@ -1,0 +1,20 @@
+@import "../variables.scss";
+
+.explainCard{
+    width: 20rem;
+    margin: auto;
+    .explainImg
+    {
+        width: 11rem;
+    }
+}
+
+.explainCardFirst{
+    border: $color-backwelt solid 4px;
+}
+.explainCardsecond{
+    border: $color-backwelt solid 4px;
+}
+.explainCardthird{
+    border: $color-backwelt solid 4px;
+}

@@ -5,7 +5,7 @@ const api = axios.create({
     baseURL: 'https://localhost:5001/api/Recipe'
   })
  
-export async function getRecipes() {
+export function getRecipes() {
 
         // Use axio for the API/Get
         return new Promise((resolve, reject) => api.get("/")
@@ -13,18 +13,18 @@ export async function getRecipes() {
         .catch(e => reject(new Error("Fehler bei API-Request"))));
 }
 
-export async function getRecipe(number) {
+export function getRecipe(number) {
 
-        return new Promise((resolve, reject)=> api.get('/', {
-                params: {
-                  ID: number
-                }
-              })
+        return new Promise((resolve, reject)=> api.get(`/${number}`)
         .then(res => resolve(res.data))
-        .catch(e => reject(new Error("Fehler bei API-Request")))
-        );
+        .catch((e) => {
+          console.log(res.data)
+          reject(new Error("Fehler bei API-Request"))
+        }))
+
         
-        return recipes.find(
-            recipe => recipe.Number === number
-          );
-  }
+        
+        // return recipes.find(
+        //     recipe => recipe.Number === number
+        //   );
+}

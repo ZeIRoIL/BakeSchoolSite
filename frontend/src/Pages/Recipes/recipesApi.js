@@ -1,6 +1,8 @@
 import { useState, useEffect} from "react";
 import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 
+import { useSelector, useDispatch } from 'react-redux';
+
 import { getRecipes } from "../../Api/RecipeData";
 
 import '../../Assets/Style/pages/recipes.scss';
@@ -11,8 +13,11 @@ export default function Recipes() {
     // get the data from the Api Fetch! It is needed to load for the next sitepage
   let [recipes, setRecipes] = useState([]);
   let [searchParams, setSearchParams] = useSearchParams();
-  console.log(recipes);
+  // console.log(recipes);
 
+  
+  const count = useSelector(state => state.counter)
+  console.log(count)
   useEffect(() => {
     getRecipes().then(setRecipes);
   }, []);

@@ -1,0 +1,14 @@
+@import "../variables.scss";
+
+.aboutUs 
+{
+    h2{
+        font-size: 4rem;
+        color: $color-recipes;
+    }
+    p{
+    width: 58%;
+    font-size: 1.7rem;
+    margin:auto;
+    }
+}
