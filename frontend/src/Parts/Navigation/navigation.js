@@ -42,7 +42,7 @@ export class Navigation extends Component {
                             </div>
                             </div>
                             <div className='col justify-content-center '>
-                                <a class="navbar-brand fs-1 " href="#">BakeSchool</a>
+                                <a class="navbar-brand fs-1 " href="/">BakeSchool</a>
                             </div>
                             <div className='col ps-5'>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

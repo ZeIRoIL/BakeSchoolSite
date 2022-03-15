@@ -32,7 +32,7 @@ function RecipeList({ description }) {
     return (
         <div className='container'>
             <div className='row'>
-                <h2 className='text-center'>Anleitung</h2>
+                {/* <h2 className='text-center'>Anleitung</h2> */}
 
                 {description
                     .map(des =>
