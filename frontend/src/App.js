@@ -10,17 +10,20 @@ import Footer from './Parts/Footer/footer';
 
 // libary
 import 'bootstrap/dist/css/bootstrap.css';
+// easy-peasy 
+import store from './store/store';
+import { StoreProvider } from 'easy-peasy';
 
 
 
 const App = () => {
   return ( 
-
+  <StoreProvider store={store}>
     <div className="App" >  
       <Navigation/>
-    <Footer/>
-  </div>
-
+      <Footer/>
+    </div>
+  </StoreProvider>
   );
 }
 

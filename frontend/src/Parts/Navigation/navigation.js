@@ -29,9 +29,41 @@ export class Navigation extends Component {
     render() {
         return (
             <div>
-                <Navbar collapseOnSelect className="navcustom" expand="lg" variant="dark">
+               <nav class=" navbar-expand-lg navbar-light bg-light sticky-top">
+                    <div class="container-fluid d-flex justify-content-center align-items-center">
+                        <div className='row '>
+                            <div className='col pe-5'>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link m-2" href="/category">Backwelt</a>
+                                <a class="nav-link m-2" href="/recipes">Rezepte</a>
+                                <a class="nav-link m-2" href="#">Backkurse</a>
+                            </div>
+                            </div>
+                            </div>
+                            <div className='col justify-content-center '>
+                                <a class="navbar-brand fs-1 " href="#">BakeSchool</a>
+                            </div>
+                            <div className='col ps-5'>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class="nav-link m-2" href="#">Überuns</a>
+                                        <a class="nav-link m-2" href="#">Belohnungen</a>
+                                        <a class="nav-link m-2" href="#">Anmelden</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </nav>
+                {/* <Navbar collapseOnSelect className="navcustom" expand="lg" variant="dark">
                     <Container>
-                
                         <Navbar.Brand href="/">BackSchool</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
@@ -55,7 +87,7 @@ export class Navigation extends Component {
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
-                </Navbar>
+                </Navbar> */}
 
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -65,9 +97,7 @@ export class Navigation extends Component {
                         <Route
                             index
                             element={
-                                
                                     <MainRecipesPage />
-                                
                             }
                         />
                         <Route path=":recipeId" element={<RecipeApi />} />
