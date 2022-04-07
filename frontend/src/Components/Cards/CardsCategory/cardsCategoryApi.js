@@ -48,17 +48,17 @@ export default function CardsCategory () {
       return <p>{error}</p>;
     }
     if (!isLoaded) {
-      return <Spinner animation="border" className='spinner' variant="secondary" />;
+      return <Spinner  animation="border"  size="lg" className='spinner' variant="secondary" />;
     } else {
       return (
         <div>
           {/* Filter the categories with the user searchdata  */}
           {category.map(cat =>
             <div key={cat.details.number} className="category-cards-main">
-                <CardCategory image={picture} name={cat.details.name} />
+                <CardCategory image={picture} name={cat.details.name} level={cat.details.level} />
+                
             </div>
           )}
-          
         </div>
       )
     }

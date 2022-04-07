@@ -32,18 +32,7 @@ const isLoaded = false;
 export default function CardsCategory () {
 
   let [searchParams,setSearchParams ] = useSearchParams();
-  // let [category, setCategory] = useState([]);
-  
-  // constructor(props) {
-  //   super(props);
-  //   // The Api get the data from the internet and set the variable "category"
-  //   // api.get('/').then(res => {
-  //   //   console.log(res.data)
-  //   //   setCategory({category: res.data})}) //can be a trouble because the change to function as a class
-  //   // this.isLoaded = true
-  // }
 
-  
   console.log(CategorieData());
  
     if (isLoaded) {
