@@ -13,45 +13,44 @@ import { useStoreState } from "easy-peasy";
 
 export default function Recipe() {
 
-  // let [recipe, setRecipe] = useState([]);
-
+  
   let navigate = useNavigate();
   let params = useParams();
 
-  // easy peasy 
+  // easy peasy framework function
   const recipeNummer = parseInt(params.recipeId, 10) - 1;
   const recipes = useStoreState((state) => state.recipes);
   const recipe = recipes[recipeNummer];
-  // let recipe = getRecipe(parseInt(params.recipeId, 10));
 
   //get data from the recipes Data
     let ingredients = recipe.ingredients;
     let description = recipe.description;
-  
-  // useEffect(() => {
-  //   getRecipe(parseInt(params.recipeId, 10))
-  //   .then(
-  //     recipe => {
-  //       setRecipe(recipe);
-  //     });
-  // }, []);
 
   console.log(recipe);
 
   return (
-    <main className="container p-5" style={{ padding: "1rem" }}>
-      <div className="row">
-        <div className="col-xl-4 pe-5">
-          <h2 className="">{recipe.name}</h2>
-          <RecipeTable ingredients={ingredients} />
-        </div>
-        <div className="col-xl-8 ps-5">
-        <RecipeList description={description}/>
-        </div>
+    <>
+    <main className="container p-5 " style={{ padding: "1rem" }}>
+      <h2 className="mb-5 recipeHeaderText ">{recipe.name}</h2>
+      <div className="d-flex flex-row"> 
+      <div className="col-xl-4 pb-3 pe-4">
+              <h3>Zutaten</h3>
+              <RecipeTable ingredients={ingredients} />
+              {/* Place for the ads */}
+            </div>
+        <div className="row recipeMain">
+            
+            <div className="col-xl-12 ms-5">
+            <RecipeList description={description}/>
+            <RecipeList description={description}/>
+            </div>
+          </div>
       </div>
-      <div className="container">
-        <h2>Hier kommt das Video</h2>
+      <div className="col mt-5">
+            <h2>Hier kommt das Video</h2>
       </div>
+        
     </main>
+  </>
   );
 }

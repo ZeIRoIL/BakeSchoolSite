@@ -6,7 +6,7 @@ import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 
 import { getRecipes } from "../../Api/RecipeData";
 
-import '../../Assets/Style/pages/recipes.scss';
+import '../../Assets/Style/pages/Recipes/recipes.scss';
 
 function Recipes() {
   
@@ -55,7 +55,7 @@ function Recipes() {
               style={({ isActive }) => ({
                 display: "block",
                 margin: "1rem 0",
-                color: isActive ? "red" : "",
+                color: isActive ? "#DC5C49" : "black",
               })}
               to={`/recipes/${recipe.number}`}
               key={recipe.number}
