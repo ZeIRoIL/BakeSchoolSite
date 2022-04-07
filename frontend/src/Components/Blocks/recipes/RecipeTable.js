@@ -1,6 +1,7 @@
 import React from 'react'
 
-
+// Style assets
+import '../../../Assets/Style/Blocks/recipeTable.scss';
 
 
 export default function RecipeTable({ingredients}) {

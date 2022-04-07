@@ -1,4 +1,4 @@
-@import "../variables.scss";
+@import "../../variables.scss";
 
 .recipeHeader
 {
@@ -9,7 +9,7 @@
     background-color: transparent;
     padding: 3% !important;
     a{
-        color: $text-nav;
+        
         font-size: 1.2rem;
         text-decoration: none;
     }
@@ -17,7 +17,7 @@
         color: $primary-color;
     }
     a:active{
-        color: #DC5C49 !important;
+        
     }
 }
 

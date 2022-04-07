@@ -1,0 +1,56 @@
+@import "../variables.scss";
+
+.recipeHeaderText
+{
+    color: $color-recipes;
+    font-size: 3rem;
+    
+}
+.recipeMain
+{
+    align-items: center;
+    text-align: -webkit-center;
+}
+
+.recipeHintsMain{
+    text-align: left !important;
+    position:inherit;
+    /* Style buttons */
+    .btn {
+       
+        border: none; /* Remove borders */
+        
+        padding: 2px 10px; /* Some padding */
+        font-size: 25px; /* Set a font size */
+        cursor: pointer; /* Mouse pointer on hover */
+        i{
+            color: $color-recipes;
+        }
+        p{
+            font-size: small;
+        }
+    }
+}
+
+.recipeListMain{
+    background-color: white;
+    border: solid black 3px; 
+}
+.recipeListBody{
+    background-color: white;
+    .recipesListText{
+
+        background-color: rgb(255, 255, 255);
+        .recipehint{
+            text-align: right !important;
+        }
+        h3{
+            margin: 0 0 0 0 !important;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+    .recipesListImage{
+        background-color: rgb(252, 252, 252);
+    }
+}
