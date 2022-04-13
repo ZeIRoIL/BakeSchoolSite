@@ -1,9 +1,25 @@
 @import "../../Style/variables.scss";
 
-.viewBox-Con
-{
-    max-width: 100vw !important;
-}
+
 .containerViewBox{
-    background-color: $primary-color;
+    background-color: #FFFFFF;
+    h3{
+        color:$color-backwelt;
+        font-size: 2.5rem;
+    }
+    img{
+       
+    }
+    .imgBig{
+        padding: 5px;
+        
+    }
+    .imgMd{
+        padding: 10px;
+       
+    }
+    .imgSm{
+        padding: 20px;
+     
+    }
 }
