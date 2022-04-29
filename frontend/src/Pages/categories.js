@@ -16,6 +16,7 @@ const categoriesPage = () => {
         
         <div className='card-section' >
           <CardsCategoryApi />
+          <CardsCategoryApi />
         </div>
       </div>
     </div>

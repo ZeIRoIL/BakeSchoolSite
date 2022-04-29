@@ -17,57 +17,52 @@ import pic8 from "../../Assets/img/RecipesThumbnail/pic8.jpg";
 export default function mainViewBox() {
     return (
         <div className="containerViewBox">
+            <h3>Unsere Werke</h3>
         <div className="container viewBox-Con">
             <div className="row m-0 p-0">
                 <div className="col p-0">
                     <img
-                        className="img-fluid rounded"
+                        className="img-fluid rounded imgSm"
                         src={pic3}
                         alt="First slide"
                     />
                 </div>
                 <div className="col p-0 ">
                     <img
-                        className="img-fluid rounded"
+                        className="img-fluid rounded imgMd"
                         src={pic7}
                         alt="First slide"
                     />
                 </div>
                 <div className="col p-0 ">
                     <img
-                        className="img-fluid rounded"
+                        className="img-fluid rounded imgBig"
                         src={pic1}
                         alt="First slide"
                     />
                 </div>
                 <div className="col p-0 ">
                     <img
-                        className="img-fluid rounded"
+                        className="img-fluid rounded imgBig"
                         src={pic4}
                         alt="First slide"
                     />
                 </div>
                 <div className="col p-0 ">
                     <img
-                        className="img-fluid rounded"
+                        className="img-fluid rounded imgMd"
                         src={pic5}
                         alt="First slide"
                     />
                 </div>
-                <div className="col p-0">
+                <div className="col p-0 ">
                     <img
-                        className="img-fluid rounded"
-                        src={pic2}
-                        alt="First slide"
-                    />
-                </div>
-                <div className="col p-0">
-                    <img
-                        className="img-fluid rounded"
+                        className="img-fluid rounded imgSm"
                         src={pic8}
                         alt="First slide"
                     />
                 </div>
+                
             </div>
         </div>
         </div>

@@ -7,6 +7,7 @@ import LoginPage from '../../Pages/login';
 import Categorie from '../../Pages/categories';
 import RewardPage from '../../Pages/rewardPage';
 import { Zucker } from '../../Pages/Description/Zucker';
+import { Schokolade } from '../../Pages/Description/Schokolade';
 import Recipes from '../../Pages/Recipes/recipes';
 import RecipesApi from '../../Pages/Recipes/recipesApi';
 import Recipe from '../../Pages/Recipes/recipe';
@@ -104,6 +105,7 @@ export class Navigation extends Component {
                     </Route>
                 
                     <Route path="category/Zucker" element={<Zucker />} />
+                    <Route path="category/Schokolade" element={<Schokolade />} />
                     <Route path="reward" element={<RewardPage />} />
                     <Route path="questions" element={<QuestionPage />} />
                 </Routes>

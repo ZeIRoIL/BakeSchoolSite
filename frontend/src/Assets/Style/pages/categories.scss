@@ -2,15 +2,9 @@
 
 .backweltHeader
 {
-    color: #7CAFD1;
-    
+    color: $color-backwelt;
+    width: auto;
 }
-.card-section{
-    height: 70vh;
-    margin: 3rem;
-    padding-top: 1rem;
-}
-.tablecard{
-    background-color: $primary-color;
-    border-radius: 1rem;
-}
+
+
+

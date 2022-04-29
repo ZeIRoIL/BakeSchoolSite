@@ -25,7 +25,7 @@ export default function Recipe() {
   //get data from the recipes Data
     let ingredients = recipe.ingredients;
     let description = recipe.description;
-
+    let video = "https://www.youtube.com/watch?v=" + recipe.video;
   console.log(recipe);
 
   return (
@@ -48,6 +48,7 @@ export default function Recipe() {
       </div>
       <div className="col mt-5">
             <h2>Hier kommt das Video</h2>
+            <iframe src={video} title="description"></iframe>
       </div>
         
     </main>
