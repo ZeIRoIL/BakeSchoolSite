@@ -49,25 +49,25 @@ const showDescription = () => {
 
 return (
 <>
-    <div className="card shadow-sm card-section">
+    <div className="card shadow-sm card-section mt-5">
         <div className='card-top'>
+
+            <NavLink
+                to={`${name}`}
+                key={number}>
+                <img src={image} className="descriptionImg rounded-circle" alt="logo" />
+            </NavLink>
+          
             <div className='card-headertext'>
                 <p>{name}</p>
             </div>
+            <p>Lorem ipsum this is a empty text and should only be exist for the test!</p>
 
-            <div className='card-bottom'>
-                <NavLink
-                    to={`${name}`}
-                    key={number}>
-                    <img src={image} className="descriptionImg" alt="logo" />
-                </NavLink>
-            </div>
             <br />
             <div className='card-details'>
-                <img className='detailslogo' data-bs-toggle="modal" data-bs-target="#descritionModal" src={search} alt="logo" onClick={showDescription} />
+                {/* <img className='detailslogo' data-bs-toggle="modal" data-bs-target="#descritionModal" src={search} alt="logo" onClick={showDescription} /> */}
 
-
-                {setDifficult()}
+                <p>Schwierigkeit </p>{setDifficult()}
             </div>
         </div>
     </div>

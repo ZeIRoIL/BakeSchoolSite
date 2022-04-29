@@ -24,7 +24,7 @@ export function getRecipe(number) {
 
         
         
-        // return recipes.find(
-        //     recipe => recipe.Number === number
-        //   );
+        return recipes.find(
+            recipe => recipe.Number === number
+          );
 }

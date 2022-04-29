@@ -6,7 +6,7 @@ import Spinner from 'react-bootstrap/Spinner';
 
 
 // Test Data
-import picture from '../../../Assets/img/logo.svg';
+import picture from '../../../Assets/img/Description/Semmel/semmel.png';
 
 // API function
 import { CategorieData } from "../../../Api/CategorieData";
