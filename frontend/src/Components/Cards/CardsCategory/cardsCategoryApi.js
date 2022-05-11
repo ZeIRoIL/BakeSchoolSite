@@ -6,19 +6,19 @@ import Spinner from 'react-bootstrap/Spinner';
 
 
 // Test Data
-import picture from '../../../Assets/img/Description/Semmel/semmel.png';
+import picture from '../../../Assets/img/Description/Schokolade/MainSchokolade.png';
 
 // API function
 import { CategorieData } from "../../../Api/CategorieData";
 
 // style for the cards
-import '../../../Assets/Style/Card/card.scss';
+import '../../../Assets/Style/Card/cardCategories.scss';
 import '../../../Assets/Style/Button/searchCategory.scss';
 
 
 const api = axios.create({
     baseURL: 'https://localhost:5001/api/Category'
-  })
+});
 
 
 export default function CardsCategory () {
@@ -51,15 +51,17 @@ export default function CardsCategory () {
       return <Spinner  animation="border"  size="lg" className='spinner' variant="secondary" />;
     } else {
       return (
-        <div>
+        <>
+
           {/* Filter the categories with the user searchdata  */}
           {category.map(cat =>
-            <div key={cat.details.number} className="category-cards-main">
-                <CardCategory image={picture} name={cat.details.name} level={cat.details.level} />
-                
-            </div>
+          <div className='col-4'>
+            <CardCategory image={picture} name={cat.details.name} level={cat.details.level} /> 
+          </div>
           )}
-        </div>
+        </>
+         
+        
       )
     }
 }

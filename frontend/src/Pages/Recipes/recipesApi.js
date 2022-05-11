@@ -28,6 +28,8 @@ function Recipes() {
         }}
       >
         {/* the Searchbutton be able to filter the category */}
+        <h3>Rezeptübersicht</h3>
+        <br/>
         <input
           className=''
           placeholder='Suche dir ein Rezept'

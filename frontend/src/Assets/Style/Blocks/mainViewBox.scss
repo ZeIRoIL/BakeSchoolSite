@@ -4,22 +4,13 @@
 .containerViewBox{
     background-color: #FFFFFF;
     h3{
-        color:$color-backwelt;
+        font-family:"acumin-pro-condensed";
+        font-weight: bold;
+        color:black;
         font-size: 2.5rem;
     }
     img{
-       
+       width: 14rem !important;
     }
-    .imgBig{
-        padding: 5px;
-        
-    }
-    .imgMd{
-        padding: 10px;
-       
-    }
-    .imgSm{
-        padding: 20px;
-     
-    }
+  
 }

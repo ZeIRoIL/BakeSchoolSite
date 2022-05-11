@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.aboutUs-container{
+    max-width: 800px !important;
+    h2{
+        color: $color-backwelt;
+        font-family:"acumin-pro-condensed";
+        font-weight: 700 !important;
+        text-align: left !important;
+        font-size: 3.5rem !important;
+        margin-top: 60px;
+    }
+    p{
+        text-align: left !important;
+        font-size: 20px;
+        font-family:"coordinates";
+    }
+    img{
+        width: 100px !important;
+    }
+}

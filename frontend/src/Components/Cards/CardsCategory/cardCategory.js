@@ -11,10 +11,7 @@ import search from '../../../Assets/img/Category/lupe.png';
 
 // import the specified Page
 
-
 // style for the cards
-import '../../../Assets/Style/Card/card.scss';
-
 
 var picsize = 4 + 'rem';
 
@@ -32,9 +29,7 @@ const setDifficult = () => {
     const levels = [];
     for (var i = 0; i < level; i++) {
         levels.push(
-            <div className='d-table-cell'>
                 <img className='difficultlogo' src={icon} alt="logo" />
-            </div>
         );
     }
     return levels;
@@ -49,38 +44,19 @@ const showDescription = () => {
 
 return (
 <>
-    <div className="card shadow-sm card-section mt-5">
-        <div className='card-top'>
-
-            <NavLink
+    <div className='category-card-main'>
+        <h2>{name}</h2>
+        <div className='categroy-card-image'>
+        <NavLink
                 to={`${name}`}
                 key={number}>
-                <img src={image} className="descriptionImg rounded-circle" alt="logo" />
-            </NavLink>
-          
-            <div className='card-headertext'>
-                <p>{name}</p>
-            </div>
-            <p>Lorem ipsum this is a empty text and should only be exist for the test!</p>
-
-            <br />
-            <div className='card-details'>
-                {/* <img className='detailslogo' data-bs-toggle="modal" data-bs-target="#descritionModal" src={search} alt="logo" onClick={showDescription} /> */}
-
-                <p>Schwierigkeit </p>{setDifficult()}
-            </div>
+                <img src={image} className="category-card-img " alt="logo" />
+        </NavLink>
         </div>
-    </div>
-    <div class="modal fade" id="descritionModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class=" text-center">Beschreibung</h5>
-                </div>
-                <div class="modal-body">
-                    {Text}
-                </div>
-            </div>
+        
+        
+        <div className='categroy-card-details'>        
+                <p>Schwierigkeit </p>{setDifficult()}
         </div>
     </div>
 </>

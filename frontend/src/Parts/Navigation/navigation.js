@@ -4,6 +4,8 @@ import logo from '../../Assets/img/logo.png';
 // Pages
 import Home from '../../Pages/mainPage';
 import LoginPage from '../../Pages/login';
+import AboutUs from '../../Pages/aboutus';
+import Backkurs from '../../Pages/backkurs';
 import Categorie from '../../Pages/categories';
 import RewardPage from '../../Pages/rewardPage';
 import { Zucker } from '../../Pages/Description/Zucker';
@@ -30,39 +32,17 @@ export class Navigation extends Component {
     render() {
         return (
             <div>
-               <nav class=" navbar-expand-lg navbar-light bg-light sticky-top">
-                    <div class="container-fluid d-flex justify-content-center align-items-center">
-                        <div className='row '>
-                            <div className='col pe-5'>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link m-2" href="/category">Backwelt</a>
-                                <a class="nav-link m-2" href="/recipes">Rezepte</a>
-                                <a class="nav-link m-2" href="#">Backkurse</a>
-                            </div>
-                            </div>
-                            </div>
-                            <div className='col justify-content-center '>
-                                <a class="navbar-brand fs-1 " href="/">BakeSchool</a>
-                            </div>
-                            <div className='col ps-5'>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                    <div class="navbar-nav">
-                                        <a class="nav-link m-2" href="#">Überuns</a>
-                                        <a class="nav-link m-2" href="#">Belohnungen</a>
-                                        <a class="nav-link m-2" href="#">Anmelden</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                    </div>
-                </nav>
+                <div class="nav-custom">
+                    <header class="header-main">
+                        <ul class="nav col-12 col-md-auto">
+                            <li><a href="/" class=" nav-link px-2 nav-main">BakeSchool</a></li>
+                            <li><a href="/category" class=" nav-link px-2 link-dark">Backwelt</a></li>
+                            <li><a href="/recipes" class=" nav-link px-2 link-dark">Rezepte</a></li>
+                            <li><a href="/backkurs" class=" nav-link px-2 link-dark">Backkurse</a></li>
+                            <li><a href="/aboutus" class=" nav-link px-2 link-dark">Über uns</a></li>
+                        </ul>
+                    </header>
+                </div>
                 {/* <Navbar collapseOnSelect className="navcustom" expand="lg" variant="dark">
                     <Container>
                         <Navbar.Brand href="/">BackSchool</Navbar.Brand>
@@ -92,21 +72,21 @@ export class Navigation extends Component {
 
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="login" element={<LoginPage />} />
+                    <Route path="aboutus" element={<AboutUs />} />
                     <Route path="category" element={<Categorie />} />
                     <Route path="recipes" element={<RecipesApi />} >
                         <Route
                             index
                             element={
-                                    <MainRecipesPage />
+                                <MainRecipesPage />
                             }
                         />
                         <Route path=":recipeId" element={<RecipeApi />} />
                     </Route>
-                
+
                     <Route path="category/Zucker" element={<Zucker />} />
                     <Route path="category/Schokolade" element={<Schokolade />} />
-                    <Route path="reward" element={<RewardPage />} />
+                    <Route path="backkurs" element={<Backkurs />} />
                     <Route path="questions" element={<QuestionPage />} />
                 </Routes>
             </div>

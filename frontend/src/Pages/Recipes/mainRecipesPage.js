@@ -13,36 +13,11 @@ export default function mainRecipesPage() {
                 <div className='row p-5'>
                     <h1 className='recipeHeader'>Rezepte</h1>
                 </div>
+               <p>
+                   Lorem ipsum das soll ein Zitat sein
+               </p>
                
-                <div className='row'>
-                    <div className='col card-recipe'>
-                    <img src={pic1} class="stepImgRecipes" alt="..."/>
-                    <div>
-                        <h3>Überschrift 1</h3>
-                        <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam                        
-                        </p>
-                    </div>
-                    </div>
-                    <div className='col card-recipe mt-5 '>
-                    <img src={pic2} class="stepImgRecipes" alt="..."/>
-                    <div>
-                        <h3>Überschrift 1</h3>
-                        <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam                        
-                        </p>
-                    </div>
-                    </div>
-                    <div className='col card-recipe'>
-                    <img src={pic3} class="stepImgRecipes" alt="..."/>
-                    <div>
-                        <h3>Überschrift 1</h3>
-                        <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam                        
-                        </p>
-                    </div>
-                    </div>
-                </div>
+               
             </div>
 
        </>

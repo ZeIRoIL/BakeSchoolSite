@@ -9,7 +9,7 @@ import ExplainBlock from '../Components/Blocks/explainBlock';
 import MainViewBox  from '../Components/Blocks/mainViewBox';
 import AboutUs from '../Components/Blocks/aboutus';
 
-import pic1 from '../Assets/img/MainSite/teri.png';
+import pic1 from '../Assets/img/MainSite/MainSiteSmile.png';
 
 
 function mainPage ()  {

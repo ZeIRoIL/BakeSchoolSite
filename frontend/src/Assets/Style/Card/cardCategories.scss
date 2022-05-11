@@ -1,0 +1,38 @@
+@import "../variables.scss";
+
+
+
+.category-card-main{
+           
+        h2{
+            color: $color-backwelt;
+            text-align: left;
+            font-family:"acumin-pro-condensed";
+            
+        }
+        .category-card-img {
+            text-align: left !important;
+            width: 15rem !important;
+        }
+        p{
+            display: inline;
+        }
+        .categroy-card-image
+        {
+            text-align: left;
+        }
+        .categroy-card-details{
+            text-align: left;
+            p{
+                text-align: left !important;
+
+            }
+        }
+}
+.difficultlogo {
+    width: 30px;
+}
+
+// .card{
+//     
+// }

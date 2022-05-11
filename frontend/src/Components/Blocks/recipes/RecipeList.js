@@ -15,7 +15,7 @@ function RecipeList({ description }) {
     const [showHints, setHints] = React.useState(false);
 
     // function for the value of the button
-    const ToggleHint=()=> {
+    const ToggleHint = () => {
         showHints ? setHints(false) : setHints(true);
 
         console.log(showHints);
@@ -37,7 +37,7 @@ function RecipeList({ description }) {
                     {value.value
                         .map(h =>
                             <div >
-                                <div id="" className={showHints ? "d-inline": "d-none"}>
+                                <div id="" className={showHints ? "d-inline" : "d-none"}>
                                     <h5>{h.step}</h5>
                                     <p className="hinttext">{h.text}</p>
                                 </div>
@@ -54,27 +54,32 @@ function RecipeList({ description }) {
     return (
         <div className='container'>
             <div className='row'>
-                {/* <h2 className='text-center'>Anleitung</h2> */}
-
-                {description
+                <div className='col'>
+                    {/* <h2 className='text-center'>Anleitung</h2> */}
+                    {description
                     .map(des =>
-                        <div className='container p-1'>
-                            <div className="rounded recipeListMain">
-                                <div className='row m-1 rounded recipeListBody'>
-                                    <div className='col-xl-7 recipesListText'>
-                                    <Hint value={des.hint} className="recipehint" />                                  
-                                        <h3>{des.step}</h3>
-                                        <h5>{des.text}</h5>
-                                    </div>
-                                    <div className='col-xl-4 m-1 recipesListImage'>
-                                       
-                                        <img className="mainblockimg img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg==" />
-                                    </div>
-                                </div>
+                            <div><div className="d-flex flex-row justify-content-start recipe-main pb-3">
+                                <h3 className='pe-3'>{des.step}.</h3>
+                                <img className=" pe-3 mainblockimg img-fluid" src="https://de.rc-cdn.community.thermomix.com/recipeimage/6uz40kfd-a3453-021359-cfcd2-ix5nja2y/c9194d88-b526-4ef6-9156-72ecf656f829/main/kakao-schnecken.jpg" />
+                                <h5 className='pe-3'>{des.text}</h5>
+                                {/* <h3>{des.step}</h3>
+                        <div className='row m-1 rounded recipeListBody'>
+                            <div className='col-xl-7 recipesListText'>
+                            
+                            <Hint value={des.hint} className="recipehint" />                                  
+                                <h3>{des.step}</h3>
+                                <h5>{des.text}</h5>
+                            </div>
+                            <div className='col-xl-4 m-1 recipesListImage'>
+                            
+                                <img className="mainblockimg img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg==" />
+                            </div>
+                        </div> */}
                             </div>
                         </div>
-                    )
-                }
+                        )
+                    }
+                </div>
             </div>
         </div>
     )

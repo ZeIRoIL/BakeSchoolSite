@@ -4,13 +4,19 @@
 {
     color: $color-recipes;
     font-size: 3rem;
-    
 }
-.recipeMain
-{
-    align-items: center;
-    text-align: -webkit-center;
+.recipe-main{
+    .recipe-step{
+        width: auto;
+    }
+    h5{
+        text-align: left;
+    }
+    img{
+        width: 300px;
+    }
 }
+
 
 .recipeHintsMain{
     text-align: left !important;

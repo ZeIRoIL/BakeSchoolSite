@@ -8,6 +8,9 @@
 .recipesList{
     background-color: transparent;
     padding: 3% !important;
+    h3{
+        color: #DC5C49;
+    }
     a{
         
         font-size: 1.2rem;
@@ -20,7 +23,11 @@
         
     }
 }
-
+.recipeMain{
+    h3{
+        color:#DC5C49;
+    }
+}
 .recipes-container{
     height: 80vh;
 

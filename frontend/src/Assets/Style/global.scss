@@ -1,11 +1,7 @@
 @import "variables.scss";
+@import url("https://p.typekit.net/p.css?s=1&k=jkl2lbt&ht=tk&f=26034.26053.26062.26063.25996.25998.26000.26008.41208.41209&a=8179182&app=typekit&e=css");
 
-h1,h2,h3,h4,h5,h6,p,a{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times;
-    font-weight: 400;
-    font-style: normal;
-    // font-family: 'Short Stack', cursive;
-}
+
 body{
     background-color: #FFFFFF !important;
 
@@ -14,9 +10,9 @@ body{
 
 .img-BakeSchool
 {
-    background: url(../img/MainSite/teri.png) no-repeat center center fixed; 
-    height: 100vh;
-
+    background: url(../img/MainSite/MainSiteSmile.png) no-repeat center center fixed; 
+    height: 110vh;
+    background-position-y: -100px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

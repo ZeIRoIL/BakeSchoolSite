@@ -1,37 +1,39 @@
 // Components
-import ExpainCard from "../Cards/explainCard";
+import ExplainCard from "../Cards/explainCard";
 
 // Assets
-import pic1 from '../../Assets/img/logo.png';
+import pic1 from '../../Assets/img/MainSite/viewSites/Glühbirne.png';
+import pic2 from '../../Assets/img/MainSite/viewSites/ErdbeereCake.png';
+import pic3 from '../../Assets/img/MainSite/viewSites/Mixer.png';
 
 
 
 export default function explainBlock() {
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 mb-5">
             <div className="row ">
-                <div className="col pe-3 pt-5">
-                    <ExpainCard
+                <div className="col pe-3 ">
+                    <ExplainCard
                         name={"Backwelt"} 
-                        color={"color-bakeworld"} 
-                        text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} 
+                        color={"color-backwelt"} 
+                        text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."} 
                         img={pic1} 
                         btnName={"Backwelt"} />
                 </div>
                 <div className="col pe-3">
-                    <ExpainCard 
+                    <ExplainCard 
                         name={"Rezepte"} 
                         color={"color-recipe"} 
-                        text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} 
-                        img={pic1} 
+                        text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "} 
+                        img={pic2} 
                         btnName={"Rezepte"} />
                 </div>
-                <div className="col pe-3 pt-5">
-                    <ExpainCard 
+                <div className="col pe-3">
+                    <ExplainCard 
                         name={"Backkurse"} 
-                        color={"color-quiz"} 
-                        text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."} 
-                        img={pic1} 
+                        color={"color-backkurs"} 
+                        text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "} 
+                        img={pic3} 
                         btnName={"Backkurse"} />
                 </div>
             </div>

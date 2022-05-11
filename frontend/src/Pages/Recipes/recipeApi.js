@@ -30,7 +30,7 @@ export default function Recipe() {
 
   return (
     <>
-    <main className="container p-5 " style={{ padding: "1rem" }}>
+    <main className="container p-5 recipeMain " style={{ padding: "1rem" }}>
       <h2 className="mb-5 recipeHeaderText ">{recipe.name}</h2>
       <div className="d-flex flex-row"> 
       <div className="col-xl-4 pb-3 pe-4">
@@ -41,7 +41,6 @@ export default function Recipe() {
         <div className="row recipeMain">
             
             <div className="col-xl-12 ms-5">
-            <RecipeList description={description}/>
             <RecipeList description={description}/>
             </div>
           </div>

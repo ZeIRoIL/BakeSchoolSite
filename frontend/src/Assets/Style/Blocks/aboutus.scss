@@ -2,12 +2,17 @@
 
 .aboutUs 
 {
+    align-items: center;
+    text-align: left !important; 
     h2{
-        font-size: 4rem;
-        color: $color-recipes;
+        text-align: left !important;
+        font-family:"acumin-pro-condensed";
+        color: black;
+        font-size: 4.5rem;
     }
     p{
-    width: 58%;
+    text-align: left !important;
+    font-family:"coordinates";
     font-size: 1.7rem;
     margin:auto;
     }

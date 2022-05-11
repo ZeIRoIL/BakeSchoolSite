@@ -1,41 +1,62 @@
 @import "../variables.scss";
 
 .explainCard{
-    width: 20rem;
+    width: 18rem;
     margin: auto;
+    text-align: left !important;
+    .card-title-explain{
+        text-align: left !important;
+        font-family:"acumin-pro-condensed";
+        font-weight: bold;
+        font-size: 3.5rem;
+    }
+ 
     .explainImg
     {
-        width: 11rem;
+        width: 13rem !important;
+        text-align: left !important;
+    }
+    a{
+        color: white !important	;
     }
     .btn
     {
-        border: black solid 1px;
+        width: 100%;
     }
     .btn:hover
     {
-        background-color: rgb(130, 139, 136);
+        background-color: rgb(28, 26, 26);
+    }
+    .card-text-explain{
+        text-align: left !important;
+        font-family:"coordinates";
+        font-size: 1rem;
     }
 }
 
-.color-bakeworld
+a.color-backwelt
+{
+    background-color: $color-backwelt;
+}
+a.color-backkurs
+{
+    background-color: $color-backkurs;
+}
+a.color-recipe
+{
+    background-color: $color-recipes;
+}
+
+
+.color-backwelt
 {
     color: $color-backwelt;
 }
-.color-quiz
+.color-backkurs
 {
-    color: $color-quiz;
+    color: $color-backkurs;
 }
 .color-recipe
 {
     color: $color-recipes;
-}
-
-.explainCardFirst{
-    border: $color-backwelt solid 4px;
-}
-.explainCardsecond{
-    border: $color-backwelt solid 4px;
-}
-.explainCardthird{
-    border: $color-backwelt solid 4px;
 }

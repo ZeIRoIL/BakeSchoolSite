@@ -1,0 +1,43 @@
+@import "../variables.scss";
+
+.backkurs-section{
+    .backkurs-header{
+        max-width: 1200px !important;
+        h1{
+            color: $color-backkurs;
+            font-family:"acumin-pro-condensed";
+            font-weight: 700 !important;
+            text-align: left !important;
+            font-size: 3.5rem !important;
+            margin-top: 60px;
+        }
+        p{
+            text-align: left !important;
+            font-size: 20px;
+            font-family:"coordinates";
+        }
+    }
+    .backkurs-details{
+       
+        img{
+            width: 100px !important;
+        }
+        .backkurs-container-each{
+            background-color: blue;
+            max-width: 300px;
+            h3{
+                text-align: left;
+            }
+            h4{
+                text-align: right;
+            }
+            p{
+                text-align: left;
+            }
+        }
+    }
+}
+
+img{
+    width: 100px !important;
+}

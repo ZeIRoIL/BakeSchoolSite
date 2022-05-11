@@ -1,12 +1,27 @@
 @import "../variables.scss";
 
-.navcustom
-{
-    height: 4rem;
-    background-color: #FFFFFF;
-
-    a{
-        color: $text-nav ;
+.nav-custom{
+    text-align: -webkit-center;
+    .header-main
+    {
+        width: 70%;
+        background-color: #FFFFFF;
+        ul{
+            justify-content: space-evenly;
+        }
+        ul li{
+            font-family:"coordinates" !important;
+            font-weight: lighter !important;
+            font-size: 1.7rem !important;
+        }
+        .nav-main{
+            font-family:"acumin-pro-condensed" !important;
+            font-weight: bold !important;
+            font-size: 1.7rem !important;
+        }
+        a{
+            color: $text-nav ;
+        }
+        
     }
-    
 }
