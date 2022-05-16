@@ -4,7 +4,7 @@ import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 
 
 
-import { getRecipes } from "../../Api/RecipeData";
+// import { getRecipes } from "../../Api/RecipeData";
 
 import '../../Assets/Style/pages/Recipes/recipes.scss';
 
@@ -46,7 +46,7 @@ function Recipes() {
           />
           {/* Search Function for the Params (URLName) */}
         {recipes
-          .filter((recipe) => {
+          .filter?.((recipe) => {
             let filter = searchParams.get("filter");
             if (!filter) return true;
             let name = recipe.name.toLowerCase();

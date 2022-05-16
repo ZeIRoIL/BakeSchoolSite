@@ -4,8 +4,14 @@
     text-align: -webkit-center;
     .header-main
     {
+        
         width: 70%;
         background-color: #FFFFFF;
+
+        .logoNav
+        {
+            width: 81px !important;
+        }
         ul{
             justify-content: space-evenly;
         }
@@ -22,6 +28,18 @@
         a{
             color: $text-nav ;
         }
-        
+        .nav-back:hover
+        {
+            color: $color-backwelt;
+        }
+        .nav-recipe:hover
+        {
+            color: $color-recipes;
+        }
+        .nav-backkurs:hover
+        {
+            color: $color-backkurs;
+        }
     }
+   
 }

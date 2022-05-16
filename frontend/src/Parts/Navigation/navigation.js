@@ -18,6 +18,9 @@ import QuestionPage from '../../Pages/questionPage';
 
 // Style
 import '../../Assets/Style/Navigation/navigation.scss'; // Tell webpack that Button.js uses these styles
+ 
+//picture
+import BakeSchool from '../../Assets/img/BakeSchoolLogo.png';
 
 // Components
 import React, { Component } from 'react';
@@ -35,10 +38,10 @@ export class Navigation extends Component {
                 <div class="nav-custom">
                     <header class="header-main">
                         <ul class="nav col-12 col-md-auto">
-                            <li><a href="/" class=" nav-link px-2 nav-main">BakeSchool</a></li>
-                            <li><a href="/category" class=" nav-link px-2 link-dark">Backwelt</a></li>
-                            <li><a href="/recipes" class=" nav-link px-2 link-dark">Rezepte</a></li>
-                            <li><a href="/backkurs" class=" nav-link px-2 link-dark">Backkurse</a></li>
+                            <li><a href="/" class=" nav-link px-2 nav-main"><img src={BakeSchool} className="logoNav" alt="Bakeschool logo"/></a></li>
+                            <li><a href="/category" class=" nav-link px-2 link-dark nav-back">Backwelt</a></li>
+                            <li><a href="/recipes" class=" nav-link px-2 link-dark nav-recipe">Rezepte</a></li>
+                            <li><a href="/backkurs" class=" nav-link px-2 link-dark nav-backkurs">Backkurse</a></li>
                             <li><a href="/aboutus" class=" nav-link px-2 link-dark">Über uns</a></li>
                         </ul>
                     </header>

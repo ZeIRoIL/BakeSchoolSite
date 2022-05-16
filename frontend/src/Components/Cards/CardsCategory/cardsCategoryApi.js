@@ -3,6 +3,7 @@ import { useState, useEffect} from "react";
 import axios from "axios";
 import CardCategory from './cardCategory';
 import Spinner from 'react-bootstrap/Spinner';
+import { Image } from 'react';
 
 
 // Test Data
@@ -56,7 +57,7 @@ export default function CardsCategory () {
           {/* Filter the categories with the user searchdata  */}
           {category.map(cat =>
           <div className='col-4'>
-            <CardCategory image={picture} name={cat.details.name} level={cat.details.level} /> 
+            <CardCategory image={cat.details.image} name={cat.details.name} level={cat.details.level} /> 
           </div>
           )}
         </>

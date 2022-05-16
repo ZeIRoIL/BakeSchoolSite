@@ -18,3 +18,12 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
+.slogan{
+    font-family:"acumin-pro-condensed";
+    background-color: $color-recipes;
+    font-size: 3rem;
+    margin: auto;
+    width: 55%;
+    padding: 10px;
+    border-radius: 20px;
+}

@@ -5,64 +5,84 @@ h1{
     font-size: 3rem !important;
 }
 .cardMainDes{
-    border-color: $color-quiz;
-    border-width: 4px;
-    border-style: solid;
-    border-radius: 1rem;
-    margin: 0;
     padding-top: 5px;
-    border-radius: 1rem;
+    .zucker-header-image{
+        width: 500px !important;
+    }
     h3{
-
+        text-align: left;
+    }
+    h4{
+        text-align: left !important;
+        color: $color-backwelt;
+        font-size: 1.7rem;
+    }
+    h2
+    {
+        text-align: left;
+        color: $color-backwelt;
+        font-size: 2rem;
+    }
+    p{
+        text-align: left;
     }
     .cardHeaderDes{
-    
+    color: $color-backwelt;
     }
     .cardBodyDes{
     border-radius: 1rem;
-    }
-    p{
-        font-size: 1.5rem;
-        text-align: left !important;
-        padding: 1rem;
-    }
-    ul{
-      
-        text-align: left !important;
+    
+        p{
+            
+            font-size: 1.3rem;
+            text-align: left !important;
+            padding: 1rem;
+            color: $color-backwelt;
+        }
+        ul{
+            margin: 0 0 0 0 !important;
+            padding: 0 0 0 0 !important;
+            text-align: left !important;
+            
+            font-size: 1.2rem;
+            padding-left: 4rem;
+            margin-top: -2rem !important;
+        }
+        li{
+            font-size: 0.9rem;
+        }
         
-        font-size: 1.2rem;
-        padding-left: 4rem;
-        margin-top: -2rem !important;
-    }
-    li{
     }
 }
 .ZuckerStepMain{
     margin-top: -30px !important;
     margin: 0 !important;
-    border-radius: 1rem;
     h4{
         text-align: left !important;
-        font-size: 30px;
+        font-size: 1.5rem;
         color: $color-quiz;
     }
-    border-radius: 1rem;
-    h4{
-        font-size: 1.5rem;
-    }
-    
     p{
         font-size: 1rem;
         text-align: left !important;
         padding: 1rem;
     }
+    .descriptionImg{
+        size: 40px !important;
+    }
     
 }
+.cardMainHintZucker{
+    p{
+        font-size: 1.3rem !important;
+        color: $color-backwelt;
+    }
+}
+
 .ZuckerSortContainer{
-    align-items: center;
+ 
     margin: auto;
     img{
-        width: 40rem;
-        
+        width: 30rem !important;   
     }
 }

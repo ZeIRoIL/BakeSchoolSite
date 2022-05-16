@@ -22,8 +22,8 @@ function mainPage ()  {
         
         <AboutUs />
         
-        
-        
+        <h2 className='slogan '>"Back School ist richtig cool!"</h2>
+
         {/* This a explain for the kids, which opporunity are used in our site  */}
         <ExplainBlock />
 

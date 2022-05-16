@@ -8,6 +8,7 @@
 .recipesList{
     background-color: transparent;
     padding: 3% !important;
+    border-right: 3px solid $color-recipes;
     h3{
         color: #DC5C49;
     }
@@ -27,15 +28,18 @@
     h3{
         color:#DC5C49;
     }
+    img{
+        width: 20rem !important;
+    }
 }
 .recipes-container{
-    height: 80vh;
+    height: 80vh !important;
 
     .card-recipe{
 
         .stepImgRecipes
         {
-            width: 20rem;
+            width: 20rem !important;
         }
     }
 }

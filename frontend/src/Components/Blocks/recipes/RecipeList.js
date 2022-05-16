@@ -60,12 +60,14 @@ function RecipeList({ description }) {
                     .map(des =>
                             <div><div className="d-flex flex-row justify-content-start recipe-main pb-3">
                                 <h3 className='pe-3'>{des.step}.</h3>
+                                  
                                 <img className=" pe-3 mainblockimg img-fluid" src="https://de.rc-cdn.community.thermomix.com/recipeimage/6uz40kfd-a3453-021359-cfcd2-ix5nja2y/c9194d88-b526-4ef6-9156-72ecf656f829/main/kakao-schnecken.jpg" />
                                 <h5 className='pe-3'>{des.text}</h5>
+                                
                                 {/* <h3>{des.step}</h3>
                         <div className='row m-1 rounded recipeListBody'>
                             <div className='col-xl-7 recipesListText'>
-                            
+                            <Hint value={des.hint} className="recipehint" />
                             <Hint value={des.hint} className="recipehint" />                                  
                                 <h3>{des.step}</h3>
                                 <h5>{des.text}</h5>

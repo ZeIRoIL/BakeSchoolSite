@@ -12,7 +12,7 @@ const aboutusPage = () => {
                     <p>Das Team :)</p>
                 </div>
                 <div className="col-sm">
-                   <img src={mainPicture} alt="Unser About Us bild"/>;
+                   <img src={mainPicture} alt="Unser About Us bild"/>
                 </div>
             </div>
             <div className="row">

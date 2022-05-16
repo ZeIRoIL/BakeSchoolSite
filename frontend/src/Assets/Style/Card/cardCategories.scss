@@ -6,31 +6,38 @@
            
         h2{
             color: $color-backwelt;
-            text-align: left;
+            text-align: center;
             font-family:"acumin-pro-condensed";
-            
-        }
-        .category-card-img {
-            text-align: left !important;
-            width: 15rem !important;
-        }
-        p{
-            display: inline;
+            font-size: 3rem;
         }
         .categroy-card-image
         {
+            margin: -40px 0 0 20px !important;
             text-align: left;
+
+            img {
+                text-align: left !important;
+                width: 15rem !important;
+            }
+        }
+        .category-card-detailtext{
+            margin-bottom: 5px;
+            text-align: left !important;
+            display: inline;
+            margin-bottom: 10px !important;
         }
         .categroy-card-details{
             text-align: left;
             p{
-                text-align: left !important;
-
+                display: inline;
+                margin-bottom: 10px !important;
             }
+            margin-top: 20px;
+            margin-bottom: 5px;
         }
 }
 .difficultlogo {
-    width: 30px;
+    width: 30px !important;
 }
 
 // .card{

@@ -16,7 +16,7 @@ export default function explainBlock() {
                     <ExplainCard
                         name={"Backwelt"} 
                         color={"color-backwelt"} 
-                        text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."} 
+                        text={"Hier findest du reichlich Wissenswertes und viele interssante Themen aus der Konditorei und Bäckerei."} 
                         img={pic1} 
                         btnName={"Backwelt"} />
                 </div>
@@ -24,7 +24,7 @@ export default function explainBlock() {
                     <ExplainCard 
                         name={"Rezepte"} 
                         color={"color-recipe"} 
-                        text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "} 
+                        text={"Hast du Lust auf etwas Süßes? Oder ein gutes saftiges Brot? Hier findest du großartige einfache Rezepte zum Nachbacken!"} 
                         img={pic2} 
                         btnName={"Rezepte"} />
                 </div>
@@ -32,7 +32,7 @@ export default function explainBlock() {
                     <ExplainCard 
                         name={"Backkurse"} 
                         color={"color-backkurs"} 
-                        text={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "} 
+                        text={"Willst du von Profis lernen? Dann kannst du hier nachschauen, ob ein Bäcker oder Konditor in deiner Nähe Backkurse anbietet."} 
                         img={pic3} 
                         btnName={"Backkurse"} />
                 </div>

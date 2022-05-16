@@ -1,5 +1,5 @@
-import logo from '../../../Assets/img/logo.svg';
 import React, { Component, useState } from 'react';
+import { Image } from 'react';
 import { Card, Button, Placeholder } from 'react-bootstrap';
 
 // Routing
@@ -9,14 +9,17 @@ import { Outlet, NavLink, Routes, Route } from "react-router-dom";
 import icon from '../../../Assets/img/Category/schneebesen.png';
 import search from '../../../Assets/img/Category/lupe.png';
 
+
+
 // import the specified Page
+import logoSchoki from '../../../Assets/img/Category/Schokolade.png';
 
 // style for the cards
 
 var picsize = 4 + 'rem';
 
 function CardCategory({ number, image, name, level, title, ctaButton, target }) {
-
+  
 const showDescriptionModal = () => {
 
 }
@@ -50,10 +53,12 @@ return (
         <NavLink
                 to={`${name}`}
                 key={number}>
-                <img src={image} className="category-card-img " alt="logo" />
+               <img src={image} className="category-card-img " alt="logo" />
         </NavLink>
         </div>
-        
+        <p className='category-card-detailtext'>
+           {image}
+        </p>
         
         <div className='categroy-card-details'>        
                 <p>Schwierigkeit </p>{setDifficult()}

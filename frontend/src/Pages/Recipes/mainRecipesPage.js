@@ -14,7 +14,7 @@ export default function mainRecipesPage() {
                     <h1 className='recipeHeader'>Rezepte</h1>
                 </div>
                <p>
-                   Lorem ipsum das soll ein Zitat sein
+                   Kuchen ist gottes Entschuldigung für Brokkoli
                </p>
                
                

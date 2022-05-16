@@ -83,6 +83,7 @@ export const Schokolade = () => {
                 </div>
         
                 <div className='cardMainDes p-3 m-3'>
+                    <h2>Allgemein</h2>
                     <p>Zucker wird aus der Zuckerrübe und aus dem Zuckerrohr gewonnen.	Diese bestehen meist aus circa 16-22% Kohlenhydrate und aus ca. 75% Wasser.
                         Das Zuckerrohr wird in allen tropischen Ländern angebaut und kann bis zu 4m hoch werden. Der Zucker befindet sich in den 2-5cm dicken stängeln.
                         Die Zuckerrübe wird in den wärmeren Teilen von Österreich angebaut und befindet sich in den Wurzeln unter der Erde.
