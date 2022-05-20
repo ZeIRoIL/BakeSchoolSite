@@ -18,7 +18,7 @@ import logoSchoki from '../../../Assets/img/Category/Schokolade.png';
 
 var picsize = 4 + 'rem';
 
-function CardCategory({ number, image, name, level, title, ctaButton, target }) {
+function CardCategory({ number, image, name, level, text, ctaButton, target }) {
   
 const showDescriptionModal = () => {
 
@@ -47,21 +47,21 @@ const showDescription = () => {
 
 return (
 <>
-    <div className='category-card-main'>
+    <div className='category-card-main p-2 m-2'>
         <h2>{name}</h2>
         <div className='categroy-card-image'>
         <NavLink
                 to={`${name}`}
                 key={number}>
-               <img src={image} className="category-card-img " alt="logo" />
+               <img src={image} className="" alt="logo" />
         </NavLink>
         </div>
         <p className='category-card-detailtext'>
-           {image}
+           {text}
         </p>
         
         <div className='categroy-card-details'>        
-                <p>Schwierigkeit </p>{setDifficult()}
+                <p>Schwierigkeit: </p>{setDifficult()}
         </div>
     </div>
 </>

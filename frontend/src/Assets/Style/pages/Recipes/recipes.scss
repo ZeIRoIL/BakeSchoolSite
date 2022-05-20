@@ -2,15 +2,24 @@
 
 .recipeHeader
 {
-    color: #DC5C49;
+ color: #DC5C49;
 }
-
+.recipeHeaderText
+{
+    
+    font-size: 3rem;
+    font-weight: 800 !important;
+    text-align: left;
+}
 .recipesList{
     background-color: transparent;
     padding: 3% !important;
     border-right: 3px solid $color-recipes;
+    font-family:"coordinates";;
+    text-align: right;
     h3{
-        color: #DC5C49;
+        color: $text-nav ;
+        font-weight: 800;
     }
     a{
         

@@ -40,7 +40,7 @@ export default function Recipe() {
             </div>
         <div className="row recipeMain">
             
-            <div className="col-xl-12 ms-5">
+            <div className="col-xl-12 ms-3">
             <RecipeList description={description}/>
             </div>
           </div>

@@ -1,6 +1,9 @@
+// doku
+// https://reactrouter.com/docs/en/v6/components/nav-link
+
+
 // Assets
 import logo from '../../Assets/img/logo.png';
-
 // Pages
 import Home from '../../Pages/mainPage';
 import LoginPage from '../../Pages/login';
@@ -15,17 +18,14 @@ import RecipesApi from '../../Pages/Recipes/recipesApi';
 import Recipe from '../../Pages/Recipes/recipe';
 import RecipeApi from '../../Pages/Recipes/recipeApi';
 import QuestionPage from '../../Pages/questionPage';
-
 // Style
 import '../../Assets/Style/Navigation/navigation.scss'; // Tell webpack that Button.js uses these styles
- 
 //picture
 import BakeSchool from '../../Assets/img/BakeSchoolLogo.png';
-
 // Components
 import React, { Component } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import MainRecipesPage from '../../Pages/Recipes/mainRecipesPage';
 
 
@@ -33,45 +33,65 @@ import MainRecipesPage from '../../Pages/Recipes/mainRecipesPage';
 
 export class Navigation extends Component {
     render() {
+        let activeClassName = "underline";
+        let activeCategory = "active-category";
+        let activeRecipes = "active-recipes";
+        let activeBackkurs = "active-backkurs";
         return (
-            <div>
-                <div class="nav-custom">
-                    <header class="header-main">
+            <>
+                <div class="nav-custom mt-3">
+                    <nav class="header-main">
                         <ul class="nav col-12 col-md-auto">
-                            <li><a href="/" class=" nav-link px-2 nav-main"><img src={BakeSchool} className="logoNav" alt="Bakeschool logo"/></a></li>
-                            <li><a href="/category" class=" nav-link px-2 link-dark nav-back">Backwelt</a></li>
-                            <li><a href="/recipes" class=" nav-link px-2 link-dark nav-recipe">Rezepte</a></li>
-                            <li><a href="/backkurs" class=" nav-link px-2 link-dark nav-backkurs">Backkurse</a></li>
-                            <li><a href="/aboutus" class=" nav-link px-2 link-dark">Über uns</a></li>
+                            <li>
+                                <NavLink
+                                    to=""
+                                    className={({ isActive }) =>
+                                        isActive ? activeClassName : undefined
+                                    }
+                                    >
+                                    <img src={BakeSchool} className="logoNav" alt="Bakeschool logo" />
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/category"
+                                    className={({ isActive }) =>
+                                        isActive ? activeCategory : undefined
+                                    }
+                                    >
+                                    Backwelt
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/recipes"
+                                    className={({ isActive }) =>
+                                        isActive ? activeRecipes : undefined
+                                    }
+                                    >
+                                    Rezept
+                                </NavLink>
+                            </li>
+                            <li><NavLink
+                                to="/backkurs"
+                                className={({ isActive }) =>
+                                    isActive ? activeBackkurs : undefined
+                                }
+                                >
+                                Backkurs
+                            </NavLink></li>
+                            <li><NavLink
+                                to="/aboutus"
+                                className={({ isActive }) =>
+                                    isActive ? activeClassName : undefined
+                                }
+                                >
+                                Über uns
+                            </NavLink></li>
                         </ul>
-                    </header>
+                    </nav>
                 </div>
-                {/* <Navbar collapseOnSelect className="navcustom" expand="lg" variant="dark">
-                    <Container>
-                        <Navbar.Brand href="/">BackSchool</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link href="/recipes">Rezept</Nav.Link>
-                                <Nav.Link href="/category">Kategorie</Nav.Link>
-                                <Nav.Link href="/category">Backkurse</Nav.Link>
-                            </Nav>
-                            <Nav>
-                                <Nav.Link href="/reward">Belohnungen</Nav.Link>
-                                <Nav.Link href="/reward">Über uns</Nav.Link>
-                                <Nav.Link eventKey={2} href="/login">
-                                    Mein Konto
-                                </Nav.Link>
-                                <Nav.Link>
-                                    <img src={logo} style={{ width: '2rem' }} />
-                                </Nav.Link>
-                                <Nav.Link>
-                                    300 Punkte
-                                </Nav.Link>
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar> */}
+
 
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -86,13 +106,12 @@ export class Navigation extends Component {
                         />
                         <Route path=":recipeId" element={<RecipeApi />} />
                     </Route>
-
                     <Route path="category/Zucker" element={<Zucker />} />
                     <Route path="category/Schokolade" element={<Schokolade />} />
                     <Route path="backkurs" element={<Backkurs />} />
                     <Route path="questions" element={<QuestionPage />} />
                 </Routes>
-            </div>
+            </>
         )
     }
 }

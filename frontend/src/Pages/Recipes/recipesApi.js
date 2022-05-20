@@ -46,7 +46,7 @@ function Recipes() {
           />
           {/* Search Function for the Params (URLName) */}
         {recipes
-          .filter?.((recipe) => {
+          .filter((recipe) => {
             let filter = searchParams.get("filter");
             if (!filter) return true;
             let name = recipe.name.toLowerCase();

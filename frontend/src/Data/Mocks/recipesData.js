@@ -35,6 +35,53 @@ let recipes = [
           image: "/static/media/logo.6ce24c58.svg"
         }
       ]
+  },
+  {
+    name: "Haferkekse",
+    number: 2,
+    video: "fadfasdf",
+    ingredients:
+      [
+        { data: "Ei", amount: "1" },
+        { data: "Rohrzucker", amount: "100g" },
+        { data: "Butter", amount: "60g" },
+        { data: "Öl", amount: "50g" },
+        { data: "Vanillezucker", amount: "20g" },
+        { data: "Haferflocken fein", amount: "180g" },
+        { data: "Dinkelmehl", amount: "180g" },
+        { data: "Salz", amount: "1 Prise" },
+        { data: "Backpulver", amount: "1/2 Päckchen" },
+        { data: "Zimt", amount: "2 Prise" },
+      ]
+    ,
+    description:
+      [
+        {
+          step: 1,
+          text: "Zutaten in mehreren Schüsseln vorbereiten. ",
+          hint:"undefined",
+          image: "/recipes/Hanfkekse/Zutaten.jpg"
+        },
+        {
+          step: 2,
+          text: "Backofen auf 175°C vorheizen.",
+
+          hint:"undefined",
+          image: "undefined"
+        },
+        {
+          step: 3,
+          text: "1 Ei und den 100g Zucker + 20g Vanillezucker+ 1Prise Salz schaumig schlagen",
+          hint:"undefined",
+          image: "/recipes/Hanfkekse/Schritt1.png"
+        },
+        {
+          step: 4,
+          text: "Danach die 60g Zimmerwarme Butter nach und nach dazugeben und weiter rühren lassen",
+          hint:"undefined",
+          image: "/recipes/Hanfkekse/Schritt2.png"
+        }
+      ]
   }
 ];
 

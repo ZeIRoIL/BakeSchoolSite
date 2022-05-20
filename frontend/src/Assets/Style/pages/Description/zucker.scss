@@ -1,14 +1,15 @@
 @import "../../variables.scss";
 
-h1{
-    color: $color-quiz;
-    font-size: 3rem !important;
-}
+
 .cardMainDes{
     padding-top: 5px;
     .zucker-header-image{
         width: 500px !important;
     }
+    h1{
+    color: $color-quiz;
+    font-size: 3rem !important;
+}
     h3{
         text-align: left;
     }

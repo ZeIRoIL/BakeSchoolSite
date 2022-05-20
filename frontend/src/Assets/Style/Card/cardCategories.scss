@@ -3,7 +3,8 @@
 
 
 .category-card-main{
-           
+           border: solid 2px $color-backwelt;
+           border-radius: 20px;
         h2{
             color: $color-backwelt;
             text-align: center;
@@ -12,19 +13,23 @@
         }
         .categroy-card-image
         {
-            margin: -40px 0 0 20px !important;
+            margin: auto !important;
             text-align: left;
 
             img {
+                margin-top: -20px;
                 text-align: left !important;
                 width: 15rem !important;
+                
             }
         }
         .category-card-detailtext{
-            margin-bottom: 5px;
+            margin-top: -25px;
             text-align: left !important;
+            float: left;
+            height: 76px;
             display: inline;
-            margin-bottom: 10px !important;
+            margin-bottom: 37px !important;
         }
         .categroy-card-details{
             text-align: left;
