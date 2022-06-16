@@ -1,6 +1,7 @@
 let recipes = [
   {
     name: "Gebrannte Mandeln",
+    thumbnail : "/img/recipes/Hanfkekse/main.jpg",
     number: 1,
     video: "fadfasdf",
     ingredients:
@@ -38,11 +39,12 @@ let recipes = [
   },
   {
     name: "Haferkekse",
+    thumbnail : "/img/recipes/Hanfkekse/main.jpg",
     number: 2,
     video: "fadfasdf",
     ingredients:
       [
-        { data: "Ei", amount: "1" },
+        { data: "Ei", amount: "1 Stk." },
         { data: "Rohrzucker", amount: "100g" },
         { data: "Butter", amount: "60g" },
         { data: "Öl", amount: "50g" },
@@ -51,7 +53,7 @@ let recipes = [
         { data: "Dinkelmehl", amount: "180g" },
         { data: "Salz", amount: "1 Prise" },
         { data: "Backpulver", amount: "1/2 Päckchen" },
-        { data: "Zimt", amount: "2 Prise" },
+        { data: "Zimt", amount: "2g" },
       ]
     ,
     description:
@@ -60,7 +62,7 @@ let recipes = [
           step: 1,
           text: "Zutaten in mehreren Schüsseln vorbereiten. ",
           hint:"undefined",
-          image: "/recipes/Hanfkekse/Zutaten.jpg"
+          image: "/img/recipes/Hanfkekse/Schritt1.jpg"
         },
         {
           step: 2,
@@ -73,13 +75,43 @@ let recipes = [
           step: 3,
           text: "1 Ei und den 100g Zucker + 20g Vanillezucker+ 1Prise Salz schaumig schlagen",
           hint:"undefined",
-          image: "/recipes/Hanfkekse/Schritt1.png"
+          image: "/img/recipes/Hanfkekse/Schritt3.png"
         },
         {
           step: 4,
           text: "Danach die 60g Zimmerwarme Butter nach und nach dazugeben und weiter rühren lassen",
           hint:"undefined",
-          image: "/recipes/Hanfkekse/Schritt2.png"
+          image: "/img/recipes/Hanfkekse/Schritt4.png"
+        },
+        {
+          step: 5,
+          text: "50g Öl eingießen",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt5.png"
+        },
+        {
+          step: 6,
+          text: "Alle trockenen Zutaten (180g Haferflocken, 180g Dinkelmehl, ½ Backpulver, Zimt) unterrühren. ",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt6.png"
+        },
+        {
+          step: 7,
+          text: "Den fertigen Teig kann man am besten mit einen Eisportionierer auf ein Blech, das mit Backpapier belegt ist, aufteilen. ",
+          hint:"Die Kekse laufen nicht stark auseinander daher muss man nicht so viel abstand lassen!",
+          image: "/img/recipes/Hanfkekse/Schritt7.png"
+        },
+        {
+          step: 8,
+          text: "Die Kekse in das vorgeheizte Backrohr geben und bei 175°C circa 15 Minuten backen. ",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt8.jpg"
+        },
+        {
+          step: 9,
+          text: "Wenn die Kekse ausgekühlt sind kann man sie je nach Wunsch noch mit Schokolade verzieren oder in Schokolade eintauchen!",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
         }
       ]
   }

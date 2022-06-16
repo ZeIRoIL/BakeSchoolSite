@@ -12,7 +12,7 @@ export default function RecipeTable({ingredients}) {
             <table className="table">
             <thead>
               <tr>
-                <th scope="col">Name</th>
+                <th scope="col">Zutat</th>
                 <th scope="col">Menge</th>
               </tr>
             </thead>

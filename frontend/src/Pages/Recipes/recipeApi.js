@@ -9,7 +9,8 @@ import RecipeTable from "../../Components/Blocks/recipes/RecipeTable";
 import RecipeList from "../../Components/Blocks/recipes/RecipeList";
 import { useStoreState } from "easy-peasy";
 
-
+// Style assets
+import '../../Assets/Style/pages/Recipes/recipes.scss';
 
 export default function Recipe() {
 
@@ -32,9 +33,10 @@ export default function Recipe() {
     <>
     <main className="container p-5 recipeMain " style={{ padding: "1rem" }}>
       <h2 className="mb-5 recipeHeaderText ">{recipe.name}</h2>
+        <img src={recipe.thumbnail} alt={recipe.thumbnail} className="recipe-thumbnail mb-5 text-left"/>
       <div className="d-flex flex-row"> 
       <div className="col-xl-4 pb-3 pe-4">
-              <h3>Zutaten</h3>
+              <h3>Rezeptur</h3>
               <RecipeTable ingredients={ingredients} />
               {/* Place for the ads */}
             </div>

@@ -7,9 +7,20 @@
 .recipeHeaderText
 {
     
-    font-size: 3rem;
-    font-weight: 800 !important;
-    text-align: left;
+    font-size: 3.5rem !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+.recipe-thumbnail
+{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    padding: 5px;
+    box-shadow: 2px 2px 5px 1px $color-recipes;
+}
+.recipe-thumbnail:hover
+{
+  
 }
 .recipesList{
     background-color: transparent;
@@ -39,16 +50,5 @@
     }
     img{
         width: 20rem !important;
-    }
-}
-.recipes-container{
-    height: 80vh !important;
-
-    .card-recipe{
-
-        .stepImgRecipes
-        {
-            width: 20rem !important;
-        }
     }
 }

@@ -22,11 +22,13 @@ const ToggleHint = () => {
 }
 
 function Hint(value) {
+    console.log(value);
     if (value.value === "undefined") {
         return <div></div>
     }
     else {
         return (
+            
             <div className="recipeHintsMain">
                 <button className="btn"
                     onClick={ToggleHint} >
@@ -34,15 +36,15 @@ function Hint(value) {
                     <p className='d-inline'> Hinweis</p>
                 </button>
                 {/* If the hint should be showed */}
-                {value.value
-                .map(h =>
+                
+               
                     <div >
                         <div id="" className={showHints ? "d-inline" : "d-none"}>
-                            <h5>{h.step}</h5>
-                            <p className="hinttext">{h.text}</p>
+                            <h5></h5>
+                            <p className="hinttext">{value.value}</p>
                         </div>
                     </div>
-                )}
+                
             </div>
         );
     }
@@ -75,13 +77,17 @@ return (
                     <div className="d-flex flex-row justify-content-start recipe-main pb-3">
                         <h3 className='pe-3'>{des.step}.</h3>
                         
-                        <h5 className='pe-3 ps-3 recipesListText'>{des.text}</h5>
+                        <h5 className='pe-3 ps-3 recipesListText'>{des.text}
+                        <Hint value={des.hint} className="recipehint" /> 
+                        </h5>
+                         
                         <Image value={des.image} image={des.image} />
+                        
                         {/* <h3>{des.step}</h3>
                         <div className='row m-1 rounded recipeListBody'>
                             <div className='col-xl-7 recipesListText'>
                             <Hint value={des.hint} className="recipehint" />
-                            <Hint value={des.hint} className="recipehint" />                                  
+                                                            
                                 <h3>{des.step}</h3>
                                 <h5>{des.text}</h5>
                             </div>

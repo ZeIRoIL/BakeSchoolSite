@@ -3,7 +3,11 @@
 
 table{
     th {
-        color: $color-recipes;
+    
+        font-size: 1.5rem !important;
+      }
+    td{
+        font-size: 1.3rem !important;
       }
 }
 

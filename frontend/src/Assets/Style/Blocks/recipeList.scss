@@ -10,6 +10,9 @@
 }
 
 .recipe-main{
+    border: 4px dotted $color-recipes;
+    margin-bottom: 40px;
+    padding: 10px;
     .recipe-step{
         width: auto;
     }
@@ -17,14 +20,23 @@
         margin: -8px 0px 0 0 !important;
         font-size: 3rem;
         text-align: center;
+        align-self: center;
     }
     h5{
         font-size: 1.3rem;
+        align-self: center;
         text-align: left;
         font-family:"coordinates";
+        min-width: 422px;
+        max-width: 414px;
     }
     .recipehint{
         text-align: right !important;
+    }
+    .recipesListImage{
+        border-radius: 10px;
+        
+        width: 150px;
     }
 }
 
