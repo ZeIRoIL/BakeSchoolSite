@@ -99,7 +99,7 @@ let recipes = [
           step: 7,
           text: "Den fertigen Teig kann man am besten mit einen Eisportionierer auf ein Blech, das mit Backpapier belegt ist, aufteilen. ",
           hint:"Die Kekse laufen nicht stark auseinander daher muss man nicht so viel abstand lassen!",
-          image: "/img/recipes/Hanfkekse/Schritt7.png"
+          image: "Assets/img/recipes/Hanfkekse/Schritt7.png"
         },
         {
           step: 8,
