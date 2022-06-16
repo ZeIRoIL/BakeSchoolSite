@@ -93,7 +93,7 @@ let recipes = [
           step: 6,
           text: "Alle trockenen Zutaten (180g Haferflocken, 180g Dinkelmehl, ½ Backpulver, Zimt) unterrühren. ",
           hint:"undefined",
-          image: "./static/media/pic1.abcdf183.jpg"
+          image: "static/media/pic1.abcdf183.jpg"
         },
         {
           step: 7,
