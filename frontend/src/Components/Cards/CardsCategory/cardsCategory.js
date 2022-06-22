@@ -21,67 +21,22 @@ import '../../../Assets/Style/Button/searchCategory.scss';
 let categories = getCategories();
 
 
-
-// If the data is finish loading
-const isLoaded = false;
-
-
-
-
-
 export default function CardsCategory () {
 
   let [searchParams,setSearchParams ] = useSearchParams();
 
-  console.log(CategorieData());
- 
-    if (isLoaded) {
-      return <Spinner animation="border" className='spinner' variant="secondary" />;
-    } else {
+  console.log(categories);
+
       return (
         
-        
-        // Really Data Turn
-        // <div>
-        //     {this.state.category.map(cat =>
-        //         <div ke y={cat.categoryId} className="category-cards-main">
-        //             <CardCategory image={picture} name={cat.details.categoryName} level={cat.details.difficultyLevel} title={cat.details.categoryText} target={'Zucker.js'} />
-        //         </div>
-        //     )}
+        <>
 
-
-        // </div>
-        //  Mock Data Turn
-        <div>
-          {/* the Searchbutton be able to filter the category */}
-          <input
-          className='seach-category'
-          placeholder='Suche dir eine Kategorie'
-          value={searchParams.get("filter") || ""}
-          onChange={(event) => {
-            let filter = event.target.value;
-            if (filter) {
-              setSearchParams({ filter });
-            } else {
-              setSearchParams({});
-            }
-          }}
-          />
           {/* Filter the categories with the user searchdata  */}
-          {categories
-          .filter((category) => {
-            let filter = searchParams.get("filter");
-            if (!filter) return true;
-            let name = category.name.toLowerCase();
-            return name.startsWith(filter.toLowerCase());
-          })
-          .map(cat =>
-            <div key={cat.number} className="category-cards-main">
-                <CardCategory image={picture} name={cat.name} />
-            </div>
+          {categories.map(cat =>
+          <div className='col-xl-4 col-md-4'>
+            <CardCategory image={cat.details.image} text={cat.details.text} name={cat.details.name} level={cat.details.level} /> 
+          </div>
           )}
-          <Outlet/>
-        </div>
+        </>
       )
-    }
 }

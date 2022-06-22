@@ -93,21 +93,13 @@ let recipes = [
           step: 6,
           text: "Alle trockenen Zutaten (180g Haferflocken, 180g Dinkelmehl, ½ Backpulver, Zimt) unterrühren. ",
           hint:"undefined",
-<<<<<<< HEAD
-<<<<<<< HEAD
-          image: "./static/media/pic1.abcdf183.jpg"
-=======
-          image: "/static/media/pic1.abcdf183.jpg"
->>>>>>> pic vercel
-=======
-          image: "/static/media/pic1.abcdf183.jpg"
->>>>>>> 80f15ce3843a42195697b062447d389cd53d0cf4
+          image: "/img/recipes/Hanfkekse/Schritt6.jpg"
         },
         {
           step: 7,
           text: "Den fertigen Teig kann man am besten mit einen Eisportionierer auf ein Blech, das mit Backpapier belegt ist, aufteilen. ",
           hint:"Die Kekse laufen nicht stark auseinander daher muss man nicht so viel abstand lassen!",
-          image: "Assets/img/recipes/Hanfkekse/Schritt7.png"
+          image: "/img/recipes/Hanfkekse/Schritt7.jpg"
         },
         {
           step: 8,

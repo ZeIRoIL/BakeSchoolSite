@@ -22,7 +22,7 @@ const categoriesPage = () => {
       </div>
       <div className='container categories-main-container'>
         <div className='row'>
-          <CardsCategoryApi />
+          <CardsCategory />
         </div>
       </div>
     </div>
