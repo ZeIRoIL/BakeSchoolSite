@@ -8,15 +8,14 @@ const aboutusPage = () => {
         <div className="container mt-5 aboutUs-container">
             <div className="row mb-5">
                 <div className="col-sm">
-                    <h2>Das sind wir !</h2>
-                    <p>Das Team :)</p>
+                    <h2>Wer steht hinter der Webseite</h2>
                 </div>
-                <div className="col-sm">
-                   <img src={mainPicture} alt="Unser About Us bild"/>
-                </div>
+                
             </div>
             <div className="row">
-                <p> Das ist unsere Geschichte!</p>
+                <p>Mein Name ist Tanja Kinast. Durch meine Absolvierung der Ausbildung zum Bäcker- und Konditormeister an der HTL/LMT in Wels habe ich dieses Projekt gestartet. So werde ich euch laufend mit neuen Inspirationen anregen.
+</p>
+<p>Gemeinsam mit Alexander Umgeher, der für das Programmieren der Webseite verantwortlich ist, hat dieses großartige Projekt für seine Diplomarbeit gestaltet.</p>
             </div>
         </div>
         </>

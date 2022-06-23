@@ -27,6 +27,8 @@ import React, { Component } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { Routes, Route, NavLink } from "react-router-dom";
 import MainRecipesPage from '../../Pages/Recipes/mainRecipesPage';
+import { Allgemein } from '../../Pages/Description/Allgemein';
+import { Getreide } from '../../Pages/Description/Getreide';
 
 
 
@@ -108,6 +110,8 @@ export class Navigation extends Component {
                     </Route>
                     <Route path="category/Zucker" element={<Zucker />} />
                     <Route path="category/Schokolade" element={<Schokolade />} />
+                    <Route path="category/Allgemein" element={<Allgemein />} />
+                    <Route path="category/Getreide" element={<Getreide />} />
                     <Route path="backkurs" element={<Backkurs />} />
                     <Route path="questions" element={<QuestionPage />} />
                 </Routes>

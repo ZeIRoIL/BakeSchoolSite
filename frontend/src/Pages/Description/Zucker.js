@@ -7,16 +7,17 @@ import {
 // 
 import pic1 from "../../Assets/img/Description/Zucker/Arten.png";
 import Herz from "../../Assets/img/Description/Zucker/zuckerHerz.jpg";
-import Image from '../../Assets/img/Description/Zucker/zuckerSelf.png';
+import ImageT from '../../Assets/img/Description/Zucker/zuckerSelf.png';
+import Image from '../../Assets/img/Description/Zucker/pfeilunten.png';
+
 
 // import styles
 import '../../Assets/Style/pages/Description/zucker.scss';
-
 export const Zucker = () => {
     return (
         <div>
             <div className='container mt-5'>
-                <img src={Image} className="descriptionImg mb-3" alt="logo" />
+                <img src={ImageT} className="descriptionImg mb-3" alt="logo" />
             </div>
             <h1>Zucker</h1>
             <div className='container'>
@@ -96,9 +97,9 @@ export const Zucker = () => {
                             </ul>
                         </div>
                     </div>
-                    {/* <div className='col-2 sp-3 m-3 cardMainDes'>
+                    <div className='col-2 sp-3 m-3 cardMainDes'>
                     <img src={Herz} width={900} className="zucker-header-image mb-3" alt="logo" />
-                    </div> */}
+                    </div>
                 </div>
         
                 <div className='cardMainDes m-3'>

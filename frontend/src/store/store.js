@@ -8,8 +8,6 @@ import { LoadRecipes } from "../Api/RecipeData";
 import { getRecipes } from "../Data/Mocks/recipesData";
 
 
-
-
 const store = createStore({
   recipes: getRecipes()
 });

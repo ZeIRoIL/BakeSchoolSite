@@ -27,7 +27,7 @@ const showDescriptionModal = () => {
 const [showDesc, setshowDesc] = useState(false);
 
 // There is needed for the difficultlevels
-const setDifficult = () => {
+const setDifficult = (level) => {
     console.log(level);
     const levels = [];
     for (var i = 0; i < level; i++) {
@@ -43,7 +43,7 @@ const showDescription = () => {
 
     console.log(showDesc);
 }
-
+console.log(level)
 
 return (
 <>
@@ -61,7 +61,7 @@ return (
         </p>
         
         <div className='categroy-card-details'>        
-                <p>Schwierigkeit: </p>{setDifficult()}
+                <p>Schwierigkeit: </p>{setDifficult(level)}
         </div>
     </div>
 </>

@@ -114,6 +114,117 @@ let recipes = [
           image: "/img/recipes/Hanfkekse/Schritt9.jpg"
         }
       ]
+  },
+  {
+    name: "Frühstücks Croissant",
+    thumbnail : "/img/recipes/Hanfkekse/main.jpg",
+    number: 3,
+    video: "fadfasdf",
+    ingredients:
+      [
+        { data: "Mehl W700", amount: "520g" },
+        { data: "Milch", amount: "200g" },
+        { data: "Hefe", amount: "35g" },
+        { data: "Zucker", amount: "12g" },
+        { data: "Butter", amount: "250g" },
+        { data: "Eier", amount: "75g" },
+        { data: "Salz", amount: "7g" },
+      ]
+    ,
+    description:
+      [
+        {
+          step: 1,
+          text: "35g Hefe mit 200g kalter Milch aufschlämmen.",
+          hint:"undefined",
+          image: "/static/media/logo.6ce24c58.svg"
+        },
+        {
+          step: 2,
+          text: "Mit allen restlichen Zutaten mischen und ca. 3 Minuten kneten.",
+
+          hint: [{
+            step: 1,
+            text: "Bis die Mandeln so einen weißen „Schleier“ um sich haben und kein flüssiger Zucker mehr in der Pfanne ist!"
+          },
+          {
+            step: 2,
+            text: "Die Mandeln sollten wieder ein wenig zu glänzen anfangen und danach auf ein Blech herausputzen und auseinander geben und auskühlen lassen"
+          }
+          ],
+          image: "/static/media/logo.6ce24c58.svg"
+        },
+        {
+          step: 3,
+          text: "Anschließend 15 Minuten ruhen lassen. ",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 4,
+          text: "225g Fettziegel mit etwas 25g Mehl (10%) glatt arbeiten und ausrollen. ",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 5,
+          text: "Den rechteckigen Fettziegel kühl stellen ",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 6,
+          text: "Den Grundteig auf ein Rechteck ausrollen, sodass der Teig doppelt so groß ist wie der Fettziegel, damit man ihn einschlagen kann. ",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 7,
+          text: "Ausrollen, für die erste „einfache“ Tour: Dazu faltet man den Teig zu 1/3 ein und legt das restliche Drittel darauf! / Es sieht ungefähr aus wie ein S und hat 3 Fettschichten ",
+          hint: [{
+            step: 1,
+            text: "Wichtig ist das zwischen den Schichten nicht zu viel Mehl eingearbeitet wird, also dazwischen öfters abkehren!"
+          }
+          ],
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 8,
+          text: "Bei der Zweiten Tour macht man eine Doppelte Tour / Dazu rollt man den Teig wieder länglich aus und faltet circa ¾ des Teiges, danach faltet man das restliche Viertel bis zu dem Ende des Anderen ungefalteten Teiges, zum Schluss faltet man das nochmal ganz zusammen. / Dadurch sind 4 Schichten zu sehen",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 9,
+          text: "Den Teig nach dem fertigen Tourieren einkühlen ca. 30 Minuten. (der Teig muss sich entspannen)",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 10,
+          text: "Danach kann man den Teig auf ca. 3mm dünn ausrollen à mit einem Lineal jeweils 10 cm ausmessen und zu Streifen schneiden, diese Streifen diagonal durchschneiden so entstehen Dreiecke diese zu Croissant aufrollen und aufs Blech wegsetzen. ",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 11,
+          text: "Stückgare: Die Fertig geformten Teiglinge müssen nun an einen Warmen Platz ca. 45 Minuten aufgehen lassen. Damit sich keine Haut bildet und der Teig einreist, die Croissants mit Wasser besprühen und eine Folie darauflegen ",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 12,
+          text: "Sobald die Croissant deutlich größer sind, in den Vorgeheizten Backofen bei 200°C für ca. 25 Minuten Backen  ",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        },
+        {
+          step: 13,
+          text: "Raus aus den Ofen und Genießen",
+          hint:"undefined",
+          image: "/img/recipes/Hanfkekse/Schritt9.jpg"
+        }
+      ]
   }
 ];
 

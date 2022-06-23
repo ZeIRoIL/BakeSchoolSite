@@ -30,11 +30,10 @@ export default function CardsCategory () {
       return (
         
         <>
-
           {/* Filter the categories with the user searchdata  */}
           {categories.map(cat =>
           <div className='col-xl-4 col-md-4'>
-            <CardCategory image={cat.details.image} text={cat.details.text} name={cat.details.name} level={cat.details.level} /> 
+            <CardCategory image={cat.details.image} text={cat.details.text} name={cat.details.name} level={cat.details.difficultyLevel} /> 
           </div>
           )}
         </>

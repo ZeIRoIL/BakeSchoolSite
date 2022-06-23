@@ -19,7 +19,7 @@ export default function Recipe() {
   let params = useParams();
 
   // easy peasy framework function
-  const recipeNummer = parseInt(params.recipeId, 10) - 1;
+  const recipeNummer = parseInt(params.recipeId, 10) -1 ;
   const recipes = useStoreState((state) => state.recipes);
   const recipe = recipes[recipeNummer];
 
