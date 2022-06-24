@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.schokolade-textbild{
+    h4{
+        text-align: center;
+        color: $color-backwelt;   
+    }
+    img{
+      width: 45rem !important;
+    }
+}

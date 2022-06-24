@@ -7,8 +7,8 @@ import {
 // 
 import pic1 from "../../Assets/img/Description/Zucker/Arten.png";
 import Herz from "../../Assets/img/Description/Zucker/zuckerHerz.jpg";
-import ImageT from '../../Assets/img/Description/Zucker/zuckerSelf.png';
-import Image from '../../Assets/img/Description/Zucker/pfeilunten.png';
+import Image from '../../Assets/img/Description/Zucker/zuckerSelf.png';
+
 
 
 // import styles
@@ -17,14 +17,14 @@ export const Zucker = () => {
     return (
         <div>
             <div className='container mt-5'>
-                <img src={ImageT} className="descriptionImg mb-3" alt="logo" />
+                <img src={Image} className="descriptionImg mb-3" alt="logo" />
             </div>
             <h1>Zucker</h1>
-            <div className='container'>
+            <div className='container '>
                 <p>Zucker ist meist ein Einfach oder Zweifachzucker. Der Zucker wird auch als Kohlenhydrat bezeichnet!</p>
                 {/* EinfachZucker */}
-                <div className='row  m-5 '>
-                    <div className='col-2 sp-3 m-3 cardMainDes'>
+                <div className='row  m-5 d-flex justify-content-around'>
+                    <div className='col-3 sp-3 m-3 cardMainDes bordermain'>
                         <div className='row cardHeaderDes'>
                             <h3 className=''>Einfachzucker</h3>
                         </div>
@@ -51,7 +51,7 @@ export const Zucker = () => {
                     </div>
 
                     {/* Zweifachzucker */}
-                    <div className='col-2 sp-3 m-3 cardMainDes'>
+                    <div className='col-3 sp-3 m-3 cardMainDes bordermain'>
                         <div className='row cardHeaderDes'>
                             <h3 className=''>Einfachzucker</h3>
                         </div>
@@ -69,7 +69,7 @@ export const Zucker = () => {
                         </div>
                     </div>
                     {/* VielfachZucker Description */}
-                    <div className='col-2 sp-3 m-3 cardMainDes'>
+                    <div className='col-3 sp-3 m-3 cardMainDes bordermain'>
                         <div className='row cardHeaderDes'>
                             <h3 className=''>VielfachZucker</h3>
                         </div>
@@ -97,9 +97,7 @@ export const Zucker = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className='col-2 sp-3 m-3 cardMainDes'>
-                    <img src={Herz} width={900} className="zucker-header-image mb-3" alt="logo" />
-                    </div>
+                    
                 </div>
         
                 <div className='cardMainDes m-3'>

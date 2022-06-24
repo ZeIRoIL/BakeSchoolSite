@@ -55,6 +55,7 @@
         
     }
 }
+
 .ZuckerStepMain{
     margin-top: -30px !important;
     margin: 0 !important;
@@ -86,4 +87,10 @@
     img{
         width: 30rem !important;   
     }
+}
+
+.bordermain
+{
+    border: solid 3px $color-backwelt;
+    padding: 47px !important;
 }

@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+
+.allgemein-container{
+    img{
+        width: 200px !important;
+    }
+    h4{
+        text-align: center !important;
+    }
+    p{
+        text-align: left;
+    }
+    h5{
+        text-align: left;
+    }
+    li{
+        text-align: left;
+    }
+}
+
+.table-container{
+    text-align: -webkit-center;
+    table{
+        border: solid black 2px;
+        width: 34rem;
+        th{
+            text-align: center;
+        }
+        tr{
+            border: solid black 2px;
+            margin: 20px;
+            
+        }
+    }
+}
