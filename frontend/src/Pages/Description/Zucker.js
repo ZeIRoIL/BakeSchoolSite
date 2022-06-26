@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 // 
 import pic1 from "../../Assets/img/Description/Zucker/Arten.png";
+import pic2 from "../../Assets/img/Description/Zucker/zuckergewinnung.PNG";
+import arten from "../../Assets/img/Description/Zucker/arten.PNG";
 import Herz from "../../Assets/img/Description/Zucker/zuckerHerz.jpg";
 import Image from '../../Assets/img/Description/Zucker/zuckerSelf.png';
 
@@ -13,6 +15,7 @@ import Image from '../../Assets/img/Description/Zucker/zuckerSelf.png';
 
 // import styles
 import '../../Assets/Style/pages/Description/zucker.scss';
+
 export const Zucker = () => {
     return (
         <div>
@@ -24,80 +27,7 @@ export const Zucker = () => {
                 <p>Zucker ist meist ein Einfach oder Zweifachzucker. Der Zucker wird auch als Kohlenhydrat bezeichnet!</p>
                 {/* EinfachZucker */}
                 <div className='row  m-5 d-flex justify-content-around'>
-                    <div className='col-3 sp-3 m-3 cardMainDes bordermain'>
-                        <div className='row cardHeaderDes'>
-                            <h3 className=''>Einfachzucker</h3>
-                        </div>
-                        <div className='row cardBodyDes'>
-                            <p>Traubenzucker</p>
-                            <ul className=''>  
-                                <li>in Früchten</li>
-                                <li>in Honig</li>
-                                <li>in Weintrauben</li>
-                            </ul>
-                        </div>
-                        <div className='row cardBodyDes'>
-                            <p>Fruchtzucker</p>
-                            <ul className=''>  
-                                <li>in Früchten</li>
-                            </ul>
-                        </div>
-                        <div className='row cardBodyDes'>
-                            <p>Schleimzucker</p>
-                            <ul className=''>  
-                                <li>in Milchzucker</li>    
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* Zweifachzucker */}
-                    <div className='col-3 sp-3 m-3 cardMainDes bordermain'>
-                        <div className='row cardHeaderDes'>
-                            <h3 className=''>Einfachzucker</h3>
-                        </div>
-                        <div className='row cardBodyDes'>
-                            <p>Milchzucker</p>
-                            <ul className=''>  
-                                <li>in Milchzucker</li>
-                            </ul>
-                        </div>
-                        <div className='row cardBodyDes'>
-                            <p>Malzzucker</p>
-                            <ul className=''>  
-                                <li>in Bier</li>
-                            </ul>
-                        </div>
-                    </div>
-                    {/* VielfachZucker Description */}
-                    <div className='col-3 sp-3 m-3 cardMainDes bordermain'>
-                        <div className='row cardHeaderDes'>
-                            <h3 className=''>VielfachZucker</h3>
-                        </div>
-                        <div className='row cardBodyDes'>
-                            <p>Stärke</p>
-                            <ul className=''>  
-                                <li>in Pflanzen und Getreideprodukten</li>
-                                <li>in Kartfoffeln</li>
-                                <li>in Maisstärke</li>
-                                <li>in Weizenstärke</li>
-                            </ul>
-                        </div>
-                        <div className='row cardBodyDes'>
-                            <p>Zellulose</p>
-                            <ul className=''>  
-                                <li>in Ballaststoffe</li>
-                                <li>sind sehr wichtig für uns</li>
-                            </ul>
-                        </div>
-                        <div className='row cardBodyDes'>
-                            <p>Glycogen</p>
-                            <ul className=''>  
-                                <li>in tierischen Produkten</li>
-                                <li>sind sehr wichtig für uns</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
+                    <img src={arten} alt="Zuckergewinnung" className='leit-bild' />
                 </div>
         
                 <div className='cardMainDes m-3'>
@@ -111,9 +41,9 @@ export const Zucker = () => {
                 <div className='cardMainHintZucker  m-3'>
                     <p>Für 1kg Zucker braucht man 6 kg Zuckerrüben!</p>
                 </div>
-                <div className='ZuckerSortContainer'>
-                    <img src={pic1} alt="" />
-                </div>
+                
+                <img src={pic2} alt="Zuckergewinnung" className='leit-bild' />
+                
 
                 <div className='cardMainDes p-3 m-3'>
                     <div>

@@ -6,7 +6,11 @@ import {
 } from "react-router-dom";
 // 
 import pic1 from "../../Assets/img/Description/Schokolade/SchokoHerkunft.jpg";
-
+import pic2 from "../../Assets/img/Description/Schokolade/temperieren.png";
+import pic3 from "../../Assets/img/Description/Schokolade/impf.PNG";
+import pic4 from "../../Assets/img/Description/Schokolade/mikro.PNG";
+import pic5 from "../../Assets/img/Description/Schokolade/wasserbad.PNG";
+import pic6 from "../../Assets/img/Description/Schokolade/kakao.PNG";
 import Image from '../../Assets/img/Description/Schokolade/MainSchokolade.png';
 
 // import styles
@@ -36,9 +40,9 @@ export const Schokolade = () => {
         
                 <div className='cardMainDes p-2 m-2'>
                     <h2>Schokolade</h2>
-                    <p>Die Schokolade wie man sie aus dem Supermarkt kennt, in ihrer herkömmlichen Tafel Form, hat einen <strong>geringeren Kakaobutteranteil</strong> 
+                    <p>Die Schokolade wie man sie aus dem Supermarkt kennt, in ihrer herkömmlichen Tafel Form, hat einen <strong> geringeren Kakaobutteranteil </strong> 
                         (mindestens 18%)<br></br> und einen <strong>höheren Zuckergehalt</strong>. Schokoladen eignen sich daher nicht zum Überziehen und Tunken, da sie eher 
-                        <strong>dickflüssiger</strong> ist.</p>
+                        <strong> dickflüssiger</strong> ist.</p>
                 </div>
                 <div className='cardMainDes p-2 m-2'>
                     <h2>Kuvertüre</h2>
@@ -46,7 +50,7 @@ export const Schokolade = () => {
                 </div>
                 <div className='cardMainDes p-2 m-2'>
                     <h2>Fettglasur</h2>
-                    <p>Die sogenannte Fettglasur ist häufig in den Bäckereien zu sehen, da sie eine unkomplizierte<strong>Handhabung</strong>, gegenüber normalen Kuvertüren haben kann.<br></br>
+                    <p>Die sogenannte Fettglasur ist häufig in den Bäckereien zu sehen, da sie eine unkomplizierte<strong> Handhabung</strong>, gegenüber normalen Kuvertüren haben kann.<br></br>
                     Sie müssen <strong>nicht temperiert</strong> werden!<br></br>Sie können einfach aufgewärmt und zum Überziehen und Dekorieren von Gebäcken verwendet werden.<br></br>
                     Die Fettglasur besteht nur zu einem kleinen teil aus Kakaobutter, jedoch aus vielen anderen <strong>Fetten</strong> wie z.B. Pflanzenfette. Daher kann man sie mit normalen Fetten verdünnen. </p>
                 </div>
@@ -62,7 +66,24 @@ export const Schokolade = () => {
                         <strong>Anbaugebiete: Afrika, Mittelamerika, Südamerika, Südostasien, südlicher Pazifik</strong>
                     </p>
                     <img src={pic1} alt="Karte von den Länder die Schokolade haben" />
+                    <img src={pic6} alt="Wie wird Kakao erzeugt" />
                 </div>
+
+                <div className='cardMainDes p-2 m-2'>
+                    <h2>Warum Temperieren?</h2>
+                    <p>Damit die Schokolade nach dem Aushärtennicht grau wird. Grau wird die Schokolade,wenndie Kakaobutterkristalle nicht gut miteinander verbunden werden.Ohne Temperieren würde die Kuvertüre nur langsamfest werden und keinen schönen Bruch erlangen. <br></br>Nach dem Schmelzen der verschiedenen Kuvertüren, wird sie durch verschiedene Temperiermethoden wieder abgekühlt.<br></br>Dadurch können sich die Kakaobestandteile wieder binden, die Kakaobutter kristallisiert vor.<br></br>Durch das Temperieren erhält man eine matt glänzende Oberfläche und den gewissen „Knack“.</p>
+                    <h3>Temperiermethoden:</h3>
+                    <h5>Tabliermethode</h5>
+                    <img src={pic2} alt="Warum temperieren!" className='leit-bild' />
+                    <h5>Impfmethode</h5>
+                    <img src={pic3} alt="Warum temperieren!" className='leit-bild' />
+                    <h5>Temperieren in der Mikrowelle</h5>
+                    <img src={pic4} alt="Warum temperieren!" className='leit-bild' />
+                    <h5>Temperieren im Wasserbad</h5>
+                    <h6>Vorsicht bei dieser Methode darf auf keinen Fall Wasser in die Kurvertüre gelangen!</h6>
+                    <img src={pic5} alt="Warum temperieren!" className='leit-bild' />
+                </div>
+                
 
                 <Link to="/questions">
                     <button className="mainbtn" >

@@ -12,6 +12,9 @@ export default function Recipe() {
   let params = useParams();
   let recipe = getRecipe(parseInt(params.recipeId, 10));
 
+  console.log(getRecipe(parseInt(params.recipeId, 10)));
+  
+
   // get data from the recipes Data
   let ingredients = recipe.ingredients;
   let description = recipe.description;

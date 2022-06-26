@@ -55,3 +55,5 @@ function Recipes() {
     </div>
   );
 }
+
+export default Recipes

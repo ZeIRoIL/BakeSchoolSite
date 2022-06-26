@@ -19,8 +19,8 @@ const footer = () => {
                     </a>
                     
                     <ul class="nav col-md-4 justify-content-end">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src={instagram}/></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src={facebook} /></a></li>
+                        <li class="nav-item"><a href="https://www.instagram.com/tanjastortenkreationen/" class="nav-link px-2 text-muted"><img src={instagram} /></a></li>
+                        <li class="nav-item"><a href="https://www.facebook.com/TanjasTortenkreationen" class="nav-link px-2 text-muted"><img src={facebook} /></a></li>
                     </ul>
                 </footer>
             </div>

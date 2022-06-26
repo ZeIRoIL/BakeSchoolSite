@@ -19,7 +19,7 @@ export default function Recipe() {
   let params = useParams();
 
   // easy peasy framework function
-  const recipeNummer = parseInt(params.recipeId, 10) -1 ;
+  const recipeNummer = parseInt(params.recipeId, 10) - 1;
   const recipes = useStoreState((state) => state.recipes);
   const recipe = recipes[recipeNummer];
 
@@ -28,7 +28,7 @@ export default function Recipe() {
     let description = recipe.description;
     let video = "https://www.youtube.com/watch?v=" + recipe.video;
   console.log(recipe);
-
+ 
   return (
     <>
     <main className="container p-5 recipeMain " style={{ padding: "1rem" }}>
@@ -47,10 +47,10 @@ export default function Recipe() {
             </div>
           </div>
       </div>
-      <div className="col mt-5">
+      {/* <div className="col mt-5">
             <h2>Hier kommt das Video</h2>
-            <iframe src={video} title="description"></iframe>
-      </div>
+            <iframe width="1195" height="672" src="https://www.youtube.com/embed/pDwcTZnO21E" title="GIGGAND Reagiert auf meinen SONG für ihn .. (KRANKE FOLGE)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> */}
         
     </main>
   </>

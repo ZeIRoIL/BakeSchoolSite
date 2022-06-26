@@ -17,12 +17,9 @@ const [showHints, setHints] = React.useState(false);
 // function for the value of the button
 const ToggleHint = () => {
     showHints ? setHints(false) : setHints(true);
-
-    console.log(showHints);
 }
 
 function Hint(value) {
-    console.log(value);
     if (value.value === "undefined") {
         return <div></div>
     }
@@ -63,10 +60,6 @@ function Image(value) {
     }
 }
 
-
-
-
-console.log(description[0].step);
 return (
     <div className='container'>
         <div className='row'>
@@ -78,7 +71,7 @@ return (
                         <h3 className='pe-3'>{des.step}.</h3>
                         
                         <h5 className='pe-3 ps-3 recipesListText'>{des.text}
-                        <Hint value={des.hint} className="recipehint" /> 
+                        {/* <Hint value={des.hint} className="recipehint" />  */}
                         </h5>
                          
                         <Image value={des.image} image={des.image} />
