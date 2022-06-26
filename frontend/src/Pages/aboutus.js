@@ -1,5 +1,6 @@
 import mainPicture from "../Assets/img/überunsTanja.jpeg";
 
+
 // Style import 
 import '../Assets/Style/pages/aboutus.scss';
 
@@ -21,7 +22,6 @@ const aboutusPage = () => {
                 
                 
                 <p>Gemeinsam mit Alexander Umgeher, der für das Programmieren der Webseite verantwortlich ist, hat dieses großartige Projekt für seine Diplomarbeit gestaltet.</p>
-                
             </div>
             </div>
             

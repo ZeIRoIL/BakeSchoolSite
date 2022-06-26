@@ -1,27 +1,22 @@
 let bakeSchedule = [
       {
-        datum: "31.März 2022",
-        Text: "Das ist eine Beschreibung für den Kurs",
+        datum: "Haubiversum",
+        Text: "Bitte melde dich selbst bei der Bäckerei für einen Kurs! ",
         amount: 3,
       },
       {
-        datum: "31.März 2022",
-        Text: "Das ist eine Beschreibung für den Kurs",
+        datum: "Riesenhuber",
+        Text: "Die Anmeldung geht nur über das interen Kontaktformular auf ihrer Seite!",
         amount: 3,
       },
       {
-        datum: "31.März 2022",
-        Text: "Das ist eine Beschreibung für den Kurs",
+        datum: "Sonnleiter Bäckerei",
+        Text: "Bitte melde dich selbst bei der Bäckerei für einen Kurs! ",
         amount: 3,
       },
       {
-        datum: "31.März 2022",
-        Text: "Das ist eine Beschreibung für den Kurs",
-        amount: 3,
-      },
-      {
-        datum: "31.März 2022",
-        Text: "Das ist eine Beschreibung für den Kurs",
+        datum: "Schwetz Konditorei",
+        Text: "Die Anmeldung geht nur über das interen Kontaktformular auf ihrer Seite!",
         amount: 3,
       }
   ];
